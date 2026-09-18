@@ -213,7 +213,7 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y cuidado a 
 | Foto | Apellido y Nombre                                  | Descripción|
 |------|----------------------------------------------------|------|
 | <img src="./assets/readme/Emily.png" width ="300" height="300"> | *Arroyo Gonzales, Emily Juliette - U202311469* | Soy estudiante de la carrera de Ingeniería de Software, tengo 20 años, tengo experiencia en lenguajes como C++,Python, MongoDB,etc. En trabajos grupales me gusta aportar ideas que contribuyan a mi grupo y avanzar según lo asignado.
-| <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
+| <img src="./assets/readme/Anthony.jpg" style=" object-fit: cover;" width ="300" height="300"> | *Yauri Barrios, Antony David - U202214499* | Soy estudiante de la carrera de Ingeniería de Software, tengo 22 años. Trabajo con stacks MERN & PERN, además de lenguajes como C++, C# y Java.
 | <img src="./assets/readme/Juan.jpg" width ="300" height="300"> | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
