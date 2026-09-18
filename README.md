@@ -146,7 +146,7 @@ Empatía, seguridad, transparencia, accesibilidad e innovación responsable.
 |------|----------------------------------------------------|------|
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
-| <img src="../assets/readme/Juan.jpg" width ="300" height="300"> | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
+| <img src="./assets/readme/Juan.jpg" width ="300" height="300"> | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
 
