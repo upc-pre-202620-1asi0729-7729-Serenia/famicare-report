@@ -45,15 +45,14 @@
 |  Razuri Ucañan, Piero Alejandro | U202213484 |
 |  Yauri Barrios, Antony David    | U202214499 |
 
-
-
-
 18 de Septiembre del 2026
+
+<div style="page-break-after: always;"></div> 
+</div>
 
 ---
 
 <div style="page-break-after: always;"></div>
-
 
 # Registro de Versiones del Informe
 
@@ -84,11 +83,14 @@ Para el desarrollo del AV1 cada participante del equipo realizo las siguientes t
 
 | Integrante                            | Tareas Realizadas                                                      |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Almandroz Carbajal Pierina Marysabel	 |   |
-| Amaro Villar Anjali                   |  |
-| Jara Benites Quique Vladimir	         |  |                                  
-| Quintanilla Pozo Gonzalo Samuel	      | |
-| Vilca Saboya Diego Alejandro	         |  | 
+| Arroyo Gonzales, Emily Juliette	 |   |
+| Atoche Gonzales, Nicolas Fernando                |  |
+| Estupiñan Olortegui, Juan Sebastián         |  |                                  
+| Razuri Ucañan, Piero Alejandro    | |
+| Yauri Barrios, Antony David         |  | 
+
+<div style="page-break-after: always;"></div>
+
 ---
 
 # Contenido
