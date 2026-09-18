@@ -212,7 +212,7 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y cuidado a 
 
 | Foto | Apellido y Nombre                                  | Descripción|
 |------|----------------------------------------------------|------|
-| <img src="./assets/readme/Emily.png" width ="300" height="300"> | *Emily Juliette Arroyo Gonzales - U202311469* | Soy estudiante de la carrera de Ingeniería de Software, tengo 20 años, tengo experiencia en lenguajes como C++,Python, MongoDB,etc. En trabajos grupales me gusta aportar ideas que contribuyan a mi grupo y avanzar según lo asignado.
+| <img src="./assets/readme/Emily.png" width ="300" height="300"> | *Arroyo Gonzales, Emily Juliette - U202311469* | Soy estudiante de la carrera de Ingeniería de Software, tengo 20 años, tengo experiencia en lenguajes como C++,Python, MongoDB,etc. En trabajos grupales me gusta aportar ideas que contribuyan a mi grupo y avanzar según lo asignado.
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
 | <img src="./assets/readme/Juan.jpg" width ="300" height="300"> | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
 | <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
@@ -328,9 +328,9 @@ Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan 
 
 #### 1.3.1 Segmento 1: Adultos mayores autónomos
 
-  - **Descripción:** Personas de 65 años a más, que mantienen cierto nivel de independencia (pueden salir solos a realizar actividades cotidianas como ir al parque, mercado o citas médicas), pero que presentan riesgos asociados a la edad (caídas, desorientación, deterioro cognitivo leve).
+  - **Descripción:** Personas de 60 años a más, que mantienen cierto nivel de independencia (pueden salir solos a realizar actividades cotidianas como ir al parque, mercado o citas médicas), pero que presentan riesgos asociados a la edad (caídas, desorientación, deterioro cognitivo leve).
 
-  - **Características demográficas:** Residentes en zonas urbanas; con o sin experiencia previa en el uso de tecnología; valoran su independencia y pueden mostrar resistencia inicial a sentirse "vigilados".
+  - **Características demográficas:** Residentes en zonas urbanas de Lima Metropolitana; con o sin experiencia previa en el uso de tecnología; valoran su independencia y pueden mostrar resistencia inicial a sentirse "vigilados".
 
   - **Necesidad principal:** Mantener su autonomía y libertad de movimiento, contando con un mecanismo simple para pedir ayuda en caso de emergencia.
 
@@ -348,24 +348,6 @@ Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan 
 
 # <a name="chapter_2"></a>Capitulo II: Requirements Elicitation & Analysis
 ## <a name="competitors"></a>2.1 Competidores
-
-Para comprender la posición de Famicare dentro del mercado de soluciones digitales orientadas al monitoreo y cuidado de adultos mayores, se identificaron competidores que ofrecen productos con funcionalidades relacionadas con geolocalización, zonas seguras, botones de emergencia y coordinación de cuidadores. Se priorizó la búsqueda de soluciones con presencia o proyección en Latinoamérica, además de referentes internacionales consolidados en el segmento de seguridad para adultos mayores.
-
-Se seleccionaron tres competidores: Life360, AngelSense y GCare. Life360 representa a los localizadores familiares de propósito general con mayor penetración de mercado; AngelSense representa a las soluciones especializadas en personas con riesgo de deambulación (wandering) como demencia o Alzheimer; y GCare representa a una startup latinoamericana (chilena) de AgeTech con planes activos de expansión hacia Perú, lo que la convierte en el competidor directo más cercano a nuestro contexto regional.
-
-#### 1. Life360
-
-Es una aplicación de localización familiar de uso masivo, orientada originalmente a la seguridad de la familia en general (incluyendo niños y adolescentes) más que específicamente a adultos mayores. Permite compartir ubicación en tiempo real, configurar "Place Alerts" (zonas seguras) y generar reportes de manejo con detección de choques. Adquirió la marca Jiobit, un rastreador tipo clip pensado para personas con riesgo de extravío, que ofrece acceso compartido para varios cuidadores ("Care Team") y alertas de llegada/salida de lugares guardados.
-
-#### 2. AngelSense
-
-Es una solución especializada en el monitoreo de personas con demencia, autismo u otras condiciones que implican riesgo de deambulación. Su propuesta combina un dispositivo wearable dedicado con una aplicación que aprende las rutinas diarias del usuario y envía alertas ante cambios inesperados, priorizando la precisión de la geolocalización y la reducción de falsas alarmas frente a soluciones genéricas.
-
-#### 3. GCare
-
-Es una startup chilena de AgeTech y GovTech que combina relojes inteligentes con botón de emergencia, detector de caídas, monitoreo de signos vitales y GPS en tiempo real, bajo un modelo Hardware-as-a-Service (venta del reloj más un plan de servicio de 12 meses que incluye datos, voz, plataforma y soporte 24/7). Opera con tres frentes de negocio: B2C (familiares que adquieren el dispositivo para el adulto mayor a su cargo), B2B (cajas de compensación, cooperativas, clínicas) y B2G (municipios). Actualmente se encuentra ejecutando alianzas y pilotos de expansión hacia Perú y Paraguay, por lo que representa el competidor con mayor probabilidad de entrar directamente al mercado objetivo de Famicare.
-
-La selección de estos competidores permite contrastar la propuesta de Famicare con soluciones que ya cubren parcialmente la necesidad identificada. El análisis no se limita a comparar funcionalidades, sino que busca identificar oportunidades reales de diferenciación en términos de accesibilidad económica, enfoque 100% web (sin depender de un dispositivo propietario cerrado), experiencia inclusiva para el adulto mayor y coordinación de la red de cuidado entre cuidadores familiares y formales.
 
 ### <a name="competitive_analysis"></a>2.1.1 Analisis Competitivo
 
@@ -388,10 +370,10 @@ La selección de estos competidores permite contrastar la propuesta de Famicare 
 </tr>
 
 <tr>
-<td style="vertical-align: top;"><img src=" " alt="Logo Famicare" style="height: 50px ; width: 80px;"></td>
-<td style="vertical-align: top;"><img src=" " alt="Logo Life360" style="height: 50px ; width: 150px;"></td>
-<td style="vertical-align: top;"><img src=" " alt="Logo AngelSense" style="height: 50px ; width: 80px;"></td>
-<td style="vertical-align: top;"><img src=" " alt="Logo GCare" style="height: 50px ; width: 100px;"></td>
+<td style="vertical-align: top;"><img src="./assets/readme/FamiCare logo.png" alt="Logo Famicare" style="height: 50px ; width: 80px;"></td>
+<td style="vertical-align: top;"><img src="./assets/readme/Life360 logo.png" alt="Logo Life360" style="height: 50px ; width: 150px;"></td>
+<td style="vertical-align: top;"><img src="./assets/readme/AngelSense logo.png" alt="Logo AngelSense" style="height: 50px ; width: 80px;"></td>
+<td style="vertical-align: top;"><img src="./assets/readme/GCare logo.jpg" alt="Logo GCare" style="height: 50px ; width: 100px;"></td>
 </tr>
 
 <tr>
@@ -430,7 +412,7 @@ La selección de estos competidores permite contrastar la propuesta de Famicare 
 
 <tr>
 <td rowspan="3" style="vertical-align: top;">Perfil de Producto</td>
-<td style="vertical-align: top;">Productos y Servicios</td>
+<td style="vertical-align: top;">Productos & Servicios</td>
 <td style="vertical-align: top;">Mapa en tiempo real, geofencing, botón de pánico, panel de red de cuidado con roles (administrador/colaborador), historial de actividad.</td>
 <td style="vertical-align: top;">Ubicación en tiempo real, Place Alerts, reportes de manejo, detección de choques (Life360); tracking cross-señal y Care Team (Jiobit).</td>
 <td style="vertical-align: top;">Geolocalización de alta precisión, aprendizaje de rutinas, alertas de cambios inesperados.</td>
@@ -438,7 +420,7 @@ La selección de estos competidores permite contrastar la propuesta de Famicare 
 </tr>
 
 <tr>
-<td style="vertical-align: top;">Precios y Costos</td>
+<td style="vertical-align: top;">Precios & Costos</td>
 <td style="vertical-align: top;">Modelo a validar; se proyecta suscripción mensual accesible orientada al segmento B/C peruano.</td>
 <td style="vertical-align: top;">Planes freemium y de pago por suscripción mensual/anual.</td>
 <td style="vertical-align: top;">Suscripción mensual + costo del dispositivo.</td>
@@ -490,13 +472,20 @@ La selección de estos competidores permite contrastar la propuesta de Famicare 
 
 ### <a name="estrategias_tacticas"></a>2.1.2 Estrategia y tácticas frente a competidores
 
-  - **Frente a Life360 / Jiobit (fortaleza: base de usuarios y marca):** Famicare no compite por volumen de usuarios genéricos, sino por especialización en el segmento adulto mayor peruano. La táctica es comunicar explícitamente en el Landing Page que Famicare no es una app de rastreo familiar genérica, sino una plataforma pensada para el cuidado, con lenguaje, zonas seguras y alertas diseñadas específicamente para las necesidades de un adulto mayor y de quienes lo cuidan (por ejemplo, alertas de inactividad prolongada, no solo de ubicación).
+##### Estrategias:
 
-  - **Frente a AngelSense (fortaleza: precisión y especialización clínica):** Dado que Famicare no compite inicialmente en el segmento de alta complejidad clínica (demencia avanzada), la táctica es posicionarse en el segmento de adultos mayores autónomos con riesgo leve/moderado y sus cuidadores, un segmento más amplio y menos atendido, evitando competir directamente en precisión de hardware clínico.
+- Posicionar a FamiCare como una solución accesible y fácil de utilizar para adultos mayores y cuidadores, considerando sus distintos niveles de familiaridad con la tecnología.
+- Diferenciar la propuesta mediante la integración de ubicación, alertas de riesgo y una red de cuidado compartida que facilite la coordinación entre familiares y cuidadores profesionales.
+- Ofrecer un modelo freemium que permita conocer las funciones básicas antes de contratar planes de pago con múltiples dispositivos e historial extendido.
+- Promover la confianza en el acompañamiento a distancia, destacando el respeto por la privacidad y la autonomía del adulto mayor como parte de la propuesta de valor.
 
-  - **Frente a GCare (amenaza principal: expansión activa a Perú):** la táctica central es acelerar la validación y el lanzamiento en el mercado peruano antes de que GCare consolide alianzas institucionales locales, y diferenciarse ofreciendo un modelo 100% web (sin obligar al usuario a comprar un dispositivo propietario cerrado), permitiendo mayor flexibilidad de hardware IoT, un ticket de entrada más bajo para cuidadores familiares del segmento B/C, y una experiencia pensada también para cuidadores formales.
+##### Tácticas:
 
-  - **Estrategia transversal:** construir confianza mediante validaciones reales con adultos mayores y cuidadores peruanos (needfinding, entrevistas de validación), un aspecto que los competidores internacionales no siempre priorizan en su comunicación local.
+- Incorporar tutoriales breves y guías visuales que expliquen cómo consultar la ubicación, configurar zonas seguras y utilizar el botón de ayuda.
+- Buscar alianzas con farmacias, clínicas geriátricas y residencias de adultos mayores para presentar FamiCare a sus potenciales usuarios y generar confianza.
+- Realizar demostraciones y publicar contenido en redes sociales sobre las alertas y la coordinación del cuidado, mostrando situaciones cotidianas de adultos mayores y cuidadores.
+- Mostrar en la landing page las funciones de cada plan y ejemplos de uso, explicando cómo FamiCare puede complementar las llamadas y el acompañamiento presencial.
+- Explicar claramente qué información se comparte y quién puede consultarla, para que los adultos mayores y sus cuidadores comprendan el funcionamiento de la red de cuidado.
 
 ## <a name="interviews"></a>2.2 Entrevistas
 
