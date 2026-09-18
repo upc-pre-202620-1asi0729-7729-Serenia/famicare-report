@@ -725,7 +725,7 @@ BG3: Reducir la tasa de cancelación de suscripciones (churn) a menos del 8% men
 
 ## <a name="product_backlog"></a>3.3 Product Backlog
 
-El orden del backlog se definió priorizando: (1) valor de negocio visible desde el primer sprint (Landing Page y flujo básico de onboarding), (2) el núcleo funcional de seguridad (zonas seguras y alertas, que es la propuesta de valor central de [Startup_Name]), y (3) funcionalidades de monitoreo histórico y suscripción, que aportan valor sostenido pero no son críticas para un primer demo funcional.
+El orden del backlog se definió priorizando: (1) valor de negocio visible desde el primer sprint (Landing Page y flujo básico de onboarding), (2) el núcleo funcional de seguridad (zonas seguras y alertas, que es la propuesta de valor central de Famicare), y (3) funcionalidades de monitoreo histórico y suscripción, que aportan valor sostenido pero no son críticas para un primer demo funcional.
 
 La estimación técnica de cada historia se expresa mediante **Story Points**.
 
