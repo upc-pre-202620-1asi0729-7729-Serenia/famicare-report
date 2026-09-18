@@ -236,7 +236,7 @@ Principalmente en zonas urbanas de Lima Metropolitana y otras ciudades del Perú
 
 **Who (¿A quiénes les afecta?)**
 
-Adultos mayores (60 años a más) que viven solos o con supervisión limitada, y las personas que tienen a su cargo su cuidado: cuidadores familiares (hijos, cónyuges u otros parientes que trabajan o residen lejos) y cuidadores formales (enfermeras a domicilio, personal de residencias).
+Adultos mayores (40 años a más) que viven solos o con supervisión limitada, y las personas que tienen a su cargo su cuidado: cuidadores familiares (hijos, cónyuges u otros parientes que trabajan o residen lejos) y cuidadores formales (enfermeras a domicilio, personal de residencias).
 
 **Why (¿Por qué sucede el problema?)**
 
@@ -263,7 +263,7 @@ Lo que los productos y servicios existentes no ofrecen es una solución accesibl
 
 Serenia cubrirá esta necesidad mediante Famicare, integrada con dispositivos de localización IoT de bajo costo; esto permitirá a los cuidadores definir zonas seguras, recibir alertas de riesgo en tiempo real y coordinar la atención de manera colaborativa dentro de una red de cuidados compartida.
 
-Nos centraremos inicialmente en los cuidadores (familiares o profesionales) responsables de la seguridad de adultos mayores (de 65 años en adelante) que residen en zonas urbanas de Lima.
+Nos centraremos inicialmente en los cuidadores (familiares o profesionales) responsables de la seguridad de adultos mayores (de 40 años en adelante) que residen en zonas urbanas de Lima.
 
 Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan diariamente la ubicación y el estado de las zonas seguras de la persona mayor a través de la plataforma, y ​​responden a las alertas de riesgo pocos minutos después de recibirlas.
 
@@ -328,7 +328,7 @@ Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan 
 
 #### 1.3.1 Segmento 1: Adultos mayores autónomos
 
-  - **Descripción:** Personas de 60 años a más, que mantienen cierto nivel de independencia (pueden salir solos a realizar actividades cotidianas como ir al parque, mercado o citas médicas), pero que presentan riesgos asociados a la edad (caídas, desorientación, deterioro cognitivo leve).
+  - **Descripción:** Personas de 40 años a más, que mantienen cierto nivel de independencia (pueden salir solos a realizar actividades cotidianas como ir al parque, mercado o citas médicas), pero que presentan riesgos asociados a la edad (caídas, desorientación, deterioro cognitivo leve).
 
   - **Características demográficas:** Residentes en zonas urbanas de Lima Metropolitana; con o sin experiencia previa en el uso de tecnología; valoran su independencia y pueden mostrar resistencia inicial a sentirse "vigilados".
 
@@ -338,7 +338,7 @@ Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan 
 
   - **Descripción:** Personas responsables del bienestar y la seguridad de uno o varios adultos mayores. Este segmento agrupa dos perfiles con la misma necesidad central —saber que el adulto mayor está bien y poder actuar rápido si algo ocurre— aunque con matices distintos en su relación con él:
 
-    - **Cuidadores familiares:** hijos/as, cónyuges u otros parientes (típicamente entre 30 y 60 años) que no pueden estar físicamente presentes de forma constante debido a compromisos laborales o distancia geográfica, y que suelen asumir el rol de administrador de la cuenta del adulto mayor.
+    - **Cuidadores familiares:** hijos/as, cónyuges u otros parientes (típicamente entre 20 y 60 años) que no pueden estar físicamente presentes de forma constante debido a compromisos laborales o distancia geográfica, y que suelen asumir el rol de administrador de la cuenta del adulto mayor.
 
     - **Cuidadores formales:** enfermeras a domicilio, acompañantes terapéuticos o personal de residencias geriátricas, que tienen a su cargo el cuidado directo de uno o varios adultos mayores de forma remunerada, y que suelen requerir acceso como colaboradores dentro de la red de cuidado.
 
@@ -493,8 +493,19 @@ Sabremos que hemos tenido éxito cuando observemos que los cuidadores consultan 
 
 Se diseñaron dos guías de entrevista, una por cada segmento objetivo identificado en el Capítulo I. Las preguntas buscan recoger tanto información demográfica como información conductual y actitudinal (personalidad, frustraciones, canales digitales, dispositivos de preferencia) necesaria para construir los User Personas.
 
-**Guía de entrevista — Segmento 1: Cuidadores (familiares y formales)**
-Esta guía se aplica tanto a cuidadores familiares como formales; las preguntas 1 y 2 permiten identificar el tipo de vínculo antes de continuar con las preguntas comunes.
+**Segmento 1: Adultos mayores autónomos**
+
+1. Cuéntame sobre tu día típico: ¿a qué lugares sueles salir solo/a?
+2. ¿Usas algún celular o dispositivo cuando sales de casa? ¿Cómo te sientes usándolo?
+3. ¿Alguna vez te has sentido perdido/a, desorientado/a o has tenido una caída estando fuera de casa?
+4. ¿Cómo te sientes con la idea de que quien te cuida (familiar o cuidador) pueda saber dónde estás en todo momento?
+5. ¿Qué tan fácil o difícil te resulta usar aplicaciones nuevas en el celular?
+6. Si tuvieras un botón para pedir ayuda en caso de emergencia, ¿en qué situaciones lo usarías?
+7. ¿Qué te haría sentir que una tecnología como esta te ayuda, en lugar de hacerte sentir vigilado/a?
+8. ¿Qué tipo de dispositivo preferirías llevar contigo (reloj, colgante, pulsera)? ¿Por qué?
+
+**Segmento 2: Cuidadores (familiares y formales)**
+
 1. Cuéntame un poco sobre ti: ¿a qué te dedicas? ¿Cuál es tu relación con el adulto mayor que cuidas (familiar directo, cónyuge, cuidador contratado, personal de una residencia, etc.)?
 2. ¿Cuántos adultos mayores tienes actualmente a tu cuidado y con qué frecuencia interactúas con ellos (todo el día, algunas horas, a distancia)?
 3. ¿Qué haces actualmente para saber si el adulto mayor a tu cargo está bien cuando no estás presente?
@@ -507,51 +518,98 @@ Esta guía se aplica tanto a cuidadores familiares como formales; las preguntas 
 10. (Si es cuidador formal) ¿Qué información te gustaría poder compartir fácilmente con la familia del adulto mayor (ubicación, actividad, incidentes)? ¿Qué te preocuparía sobre compartir acceso con varias personas a la vez?
 11. ¿Qué es lo que más valorarías de una aplicación de este tipo (facilidad de uso, rapidez de alertas, precio, privacidad)?
 
-**Guía de entrevista — Segmento 2: Adultos mayores autónomos**
-1. Cuéntame sobre tu día típico: ¿a qué lugares sueles salir solo/a?
-2. ¿Usas algún celular o dispositivo cuando sales de casa? ¿Cómo te sientes usándolo?
-3. ¿Alguna vez te has sentido perdido/a, desorientado/a o has tenido una caída estando fuera de casa?
-4. ¿Cómo te sientes con la idea de que quien te cuida (familiar o cuidador) pueda saber dónde estás en todo momento?
-5. ¿Qué tan fácil o difícil te resulta usar aplicaciones nuevas en el celular?
-6. Si tuvieras un botón para pedir ayuda en caso de emergencia, ¿en qué situaciones lo usarías?
-7. ¿Qué te haría sentir que una tecnología como esta te ayuda, en lugar de hacerte sentir vigilado/a?
-8. ¿Qué tipo de dispositivo preferirías llevar contigo (reloj, colgante, pulsera)? ¿Por qué?
-
 ### <a name="interviews_record"></a>2.2.2 Registro de entrevistas
 
-- Entrevistas a Ciudadores (Segmento 1)
+##### Entrevistas a Adultos mayores autónomos (Segmento 1):
 
-Nombre: Betsabé
-	Apellidos: Olortegui 
-	Edad: 52 años
-	Distrito: Chancay
-	
-  ![](./assets/CapturaEntrevista1.png)
-	
-   [Link de entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223405_upc_edu_pe/IQC5m7xaxoWSQayDICur4w5uAb_VpzECE0kj2KnRYZyPo_k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2qdOaR)
-	
-  Resumen de la entrevista
-	
-   Betsabé está al cuidado de su padre mayor a 80 años, quien es paciente oncológico, por lo que debe estar bajo cuidado constante. Asegura que muchas veces al estar alejada, lo deja al cuidado de otros familiares, pero no tiene forma de monitorearlo más que contactar a los familiares que lo cuidan en el momento, y por eso busca una solución para que pueda darle tranquilidad de que todo está bien.
-  
-- Entrevistas a Adultos mayores autónomos (Segmento 2)
+##### Entrevista 1:
+|              Atributo               | Detalle |    
+|:-----------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               Nombre                | Patricia Suarez |
+|                Edad                 | 40   |
+|              Distrito               | Surco   |
+|         Fecha de entrevista         | 17 de septiembre del 2026 |
+|               Timing                | 00:00 - 4:14  |
+|        Enlace a la grabación        | [*Ver en Microsoft Stream*](https://upcedupe-my.sharepoint.com/personal/u202213484_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202213484_upc_edu_pe%2FDocuments%2Fvideo1968336476.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.66cc9be6-dd92-4fc6-b42f-f64974693606) |
+| Captura de pantalla de la grabación | ![Entrevista-1](./assets/readme/CapturaEntrevista2.png)  |
+|               Resumen               | Patricia sale sola a parques y comercios cercanos, lleva su celular y se siente cómoda usándolo, aunque alguna vez se sintió desorientada fuera de casa. Acepta que su familia conozca su ubicación siempre que respete su privacidad; le cuesta al principio usar aplicaciones nuevas y usaría un botón de ayuda en caídas, malestar o si se pierde. Preferiría una pulsera discreta, fácil de llevar y sin molestar, que le dé seguridad sin hacerla sentir vigilada. |
 
-Nombre: Patricia
-	Apellidos: Suarez 
-	Edad: 40 años
-	Distrito: Surco
-	
-  ![](./assets/CapturaEntrevista2.png)
-	
-  [Link de entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213484_upc_edu_pe/IQA5_zyAERJkRI56ILmplUQUAR-rVERpzt9ooR9GSvwDEPc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rbYLxQ)
-	
-  Resumen de la entrevista
-	
-   Patricia sale sola a parques y comercios cercanos, lleva su celular y se siente cómoda usándolo, aunque alguna vez se sintió desorientada fuera de casa. Acepta que su familia conozca su ubicación siempre que respete su privacidad; le cuesta al principio usar aplicaciones nuevas y usaría un botón de ayuda en caídas, malestar o si se pierde. Preferiría una pulsera discreta, fácil de llevar y sin molestar, que le dé seguridad sin hacerla sentir vigilada.
+##### Entrevistas a Ciudadores (Segmento 2):
 
+##### Entrevista 1:
+|              Atributo               | Detalle |    
+|:-----------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               Nombre                | Betsabé Olortegui |
+|                Edad                 | 52   |
+|              Distrito               | Chancay   |
+|         Fecha de entrevista         | 15 de septiembre del 2026 |
+|               Timing                | 00:00 - 14:37  |
+|        Enlace a la grabación        | [*Ver en Microsoft Stream*](https://upcedupe-my.sharepoint.com/personal/u202223405_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202223405_upc_edu_pe%2FDocuments%2Fvideo1109525562%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1) |
+| Captura de pantalla de la grabación | ![Entrevista-1](./assets/readme/CapturaEntrevista1.png)  |
+|               Resumen               | Betsabé está al cuidado de su padre mayor a 80 años, quien es paciente oncológico, por lo que debe estar bajo cuidado constante. Asegura que muchas veces al estar alejada, lo deja al cuidado de otros familiares, pero no tiene forma de monitorearlo más que contactar a los familiares que lo cuidan en el momento, y por eso busca una solución para que pueda darle tranquilidad de que todo está bien. |
+
+##### Entrevista 2:
+|              Atributo               | Detalle |    
+|:-----------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               Nombre                | Keyla Suarez |
+|                Edad                 | 27   |
+|              Distrito               | Ate   |
+|         Fecha de entrevista         | 18 de septiembre del 2026 |
+|               Timing                | 00:00 - 3:18  |
+|        Enlace a la grabación        | [*Ver en Microsoft Stream*](https://upcedupe-my.sharepoint.com/personal/u202214499_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202214499_upc_edu_pe%2FDocuments%2FEntrevista.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.40f6c618-3e5a-493d-a15a-f83eeeb4d4fe) |
+| Captura de pantalla de la grabación | ![Entrevista-2](./assets/readme/CapturaEntrevista3.png)  |
+|               Resumen               | Keyal Suárez, de 27 años, trabaja en una empresa de cosméticos y dedica algunas horas al día al cuidado de su abuelo. Ella se encarga de su cuidado junto con otros familiares. Uno de sus principales problemas ocurre cuando no puede estar presente, ya que su abuelo debe tomar medicamentos, pero no recuerda correctamente los horarios, por lo que puede tomarlos a destiempo o incluso olvidarse de tomarlos. Keyal no conoce actualmente ninguna aplicación de monitoreo o recordatorio para adultos mayores. Estaría dispuesta a pagar por una aplicación siempre que cumpla completamente con sus expectativas y realmente facilite el cuidado de su abuelo. Su principal necesidad es que la aplicación sea intuitiva, sencilla y fácil de utilizar para su abuelo, especialmente considerando sus dificultades para recordar los horarios de sus medicamentos.
 
 ### <a name="interviews_analysis"></a>2.2.3 Analisis de entrevistas
 
+## 2.2.3. Análisis de entrevistas
+
+#### Segmento 1 - Adultos mayores:
+
+**Total de entrevistas registradas:** 1  
+**Entrevistada:** Patricia Suarez  
+**Edad registrada:** 40 años  
+**Distrito:** Surco
+
+**Observación:** La edad consignada no coincide con el segmento definido para FamiCare, compuesto por personas de 65 años en adelante. Es necesario verificar este dato antes de incluir la entrevista como evidencia de dicho segmento. Los siguientes hallazgos corresponden únicamente al caso de Patricia.
+
+#### Características objetivas
+
+- **Desplazamiento independiente:** Patricia señala que sale sola a parques y comercios cercanos.
+- **Uso del celular durante sus salidas:** Indica que lleva consigo su teléfono cuando sale de casa.
+- **Experiencia de desorientación:** Menciona que alguna vez se sintió desorientada fuera de su hogar.
+
+#### Características subjetivas
+
+- **Comodidad con el celular:** Manifiesta sentirse cómoda utilizando su teléfono.
+- **Dificultad inicial con aplicaciones nuevas:** Señala que al principio le cuesta utilizar aplicaciones que no conoce.
+- **Aceptación condicionada de la localización:** Aceptaría que su familia conozca su ubicación siempre que se respete su privacidad.
+- **Interés en un botón de ayuda:** Indica que lo utilizaría ante una caída, malestar o una situación en la que se encuentre perdida.
+- **Preferencia por un dispositivo discreto:** Preferiría una pulsera cómoda, fácil de llevar y que no le genere molestias.
+- **Valoración de la autonomía:** Busca sentirse segura sin percibir que está siendo vigilada.
+---
+
+#### Segmento 2 - Cuidadores:
+
+**Total de entrevistados:** 2  
+**Edades:** 52 y 27 años  
+**Distritos:** Chancay y Ate
+
+#### Características objetivas
+
+- **Cuidado de un familiar adulto mayor:** 100% (2/2) participan en el cuidado de un familiar: Betsabé cuida a su padre y Keyla a su abuelo.
+- **Participación de otros familiares:** 100% (2/2) cuentan con familiares que también intervienen en el cuidado del adulto mayor.
+- **Ausencia durante parte del cuidado:** 100% (2/2) describen situaciones en las que no pueden estar presentes junto al adulto mayor.
+- **Seguimiento mediante contacto con familiares:** 50% (1/2: Betsabé) señala que, cuando está lejos, depende de comunicarse con quienes cuidan a su padre para conocer su estado.
+- **Dificultades con los horarios de medicamentos:** 50% (1/2: Keyla) indica que su abuelo puede olvidar sus medicamentos o tomarlos fuera del horario correspondiente.
+- **Desconocimiento de aplicaciones de apoyo:** 50% (1/2: Keyla) manifiesta que no conoce aplicaciones de monitoreo o recordatorios para adultos mayores.
+
+#### Características subjetivas
+
+- **Búsqueda de tranquilidad durante la ausencia:** 50% (1/2: Betsabé) expresa interés en una solución que le permita saber que su padre se encuentra bien cuando no está presente.
+- **Preferencia por una aplicación sencilla:** 50% (1/2: Keyla) considera importante que la aplicación sea intuitiva y fácil de utilizar para su abuelo.
+- **Disposición de pago condicionada al valor:** 50% (1/2: Keyla) estaría dispuesta a pagar si la aplicación cumple sus expectativas y facilita realmente el cuidado.
+- **Interés en apoyar el cumplimiento de horarios:** 50% (1/2: Keyla) identifica como una necesidad ayudar a su abuelo a recordar cuándo debe tomar sus medicamentos.
 
 ## <a name="needfinding"></a>2.3 Needfinding
 
