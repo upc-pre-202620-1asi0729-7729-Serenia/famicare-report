@@ -60,13 +60,9 @@
 **AV1**
 
 
-| Versión | Fecha      | Autor               | Descripción de modificación                                                                     |
-|---------|------------|---------------------|-------------------------------------------------------------------------------------------------|
-| AV1      | 18/09/2026 |  Emily Arroyo      |          |
-| AV1      | 18/09/2026 |  Nicolas Atoche| |
-| AV1      | 18/09/2026 |   Juan Estupiñan  | Creacion de estructura de informe en github.|
-| AV1      | 18/09/2026 | Piero Razuri   |             |
-| AV1      | 18/09/2026 |  Antony Yauri       |              |
+| Versión | Fecha | Autor | Descripción de modificación |
+| :---: | :---: | :--- | :--- |
+| AV1 | 18/09/2026 | Emily Arroyo<br>Nicolas Atoche<br>Juan Estupiñan<br>Piero Razuri<br>Antony Yauri | Creacion de estructura de informe en github. |
 
 
 <div style="page-break-after: always;"></div>
