@@ -1,0 +1,476 @@
+// =====================================================================
+// FamiCare (Serenia) - Diagrama de base de datos (MySQL)
+// Derivado de workspace.dsl (contenedor "Database") y de las
+// historias de usuario US-01..US-25 / TS-01..TS-04.
+// Pegar en https://dbdiagram.io/d  (Import > DBML o editor directo)
+//
+// REGLA: sin ciclos. Tomando las relaciones sin direccion, las 15 tablas
+// forman un arbol (20 tablas, 19 relaciones, todas conectadas).
+// =====================================================================
+
+Project famicare {
+  database_type: 'MySQL'
+  Note: '''
+    # FamiCare
+    Base de datos única (MySQL) compartida por los 5 bounded contexts de la REST API:
+    Care Network & Account Management, IoT Device Management, Safe Zones & Risk Alerts,
+    Location & Activity Monitoring y Subscription & Billing.
+  '''
+}
+
+// ---------------------------------------------------------------------
+// ENUMS (valores tomados del dominio en workspace.dsl)
+// ---------------------------------------------------------------------
+
+enum care_member_role {
+  primary_caregiver [note: 'Cuidador administrador: administra la red de cuidado']
+  collaborator      [note: 'Cuidador colaborador: permisos limitados']
+}
+
+enum invitation_status {
+  pending
+  accepted
+}
+
+enum device_status {
+  online
+  offline
+}
+
+enum telemetry_event_type {
+  location
+  battery
+  panic
+}
+
+enum alert_type {
+  safe_zone_breach
+  panic
+  inactivity
+  low_battery
+}
+
+enum alert_status {
+  open         [note: 'Abierta hasta que un cuidador la reconoce']
+  acknowledged [note: 'Marcada como atendida (US-15)']
+}
+
+enum billing_interval {
+  monthly
+  yearly
+}
+
+enum subscription_status {
+  active
+  cancelled
+  expired
+}
+
+enum payment_status {
+  pending
+  succeeded
+  failed
+}
+
+enum delivery_status {
+  pending
+  sent
+  failed
+}
+
+enum notification_channel {
+  email
+  push
+}
+
+// =====================================================================
+// 1. CARE NETWORK & ACCOUNT MANAGEMENT
+// =====================================================================
+
+Table caregivers {
+  id            bigint       [pk, increment]
+  email         varchar(255) [not null, unique, note: 'Login (POST /api/auth/login)']
+  password_hash varchar(255) [not null]
+  full_name     varchar(150) [not null]
+  created_at    datetime     [not null, default: `CURRENT_TIMESTAMP`]
+  updated_at    datetime     [not null, default: `CURRENT_TIMESTAMP`]
+
+  Note: 'Cuenta de cuidador (familiar o profesional). El rol vive en care_network_members, no aquí.'
+}
+
+Table elderly_profiles {
+  id         bigint       [pk, increment]
+  full_name  varchar(150) [not null]
+  age        tinyint      [not null, note: 'US-03 pide edad (no fecha de nacimiento)']
+  photo_url  varchar(500)
+  created_at datetime     [not null, default: `CURRENT_TIMESTAMP`]
+  updated_at datetime     [not null, default: `CURRENT_TIMESTAMP`]
+
+  Note: 'Perfil del adulto mayor. No tiene cuenta ni login: solo usa el dispositivo IoT.'
+}
+
+Table care_network_members {
+  id                 bigint           [pk, increment]
+  elderly_profile_id bigint           [not null]
+  caregiver_id       bigint           [not null]
+  role               care_member_role [not null]
+  joined_at          datetime         [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    (elderly_profile_id, caregiver_id) [unique]
+    caregiver_id
+  }
+
+  Note: '''
+    Red de cuidado de un adulto mayor (agregado CareNetwork).
+    Revocar acceso (US-06) = borrar la fila.
+    Regla de negocio (a validar en la aplicación): exactamente un primary_caregiver por adulto mayor.
+  '''
+}
+
+Table invitations {
+  id                    bigint            [pk, increment]
+  elderly_profile_id    bigint            [not null]
+  invitee_email         varchar(255)      [not null, note: 'El invitado puede no tener cuenta aún']
+  status                invitation_status [not null, default: 'pending']
+  created_at            datetime          [not null, default: `CURRENT_TIMESTAMP`]
+  accepted_at           datetime
+
+  indexes {
+    (elderly_profile_id, invitee_email)
+    invitee_email
+  }
+
+  Note: 'US-04 / US-05. Siempre la emite el cuidador administrador de la red. Al aceptar se crea la fila en care_network_members con rol collaborator.'
+}
+
+// =====================================================================
+// 2. IOT DEVICE MANAGEMENT
+// =====================================================================
+
+Table iot_devices {
+  id                 bigint        [pk, increment]
+  elderly_profile_id bigint        [unique, note: 'NULL mientras el dispositivo no está vinculado. Un dispositivo por adulto mayor']
+  pairing_code       varchar(32)   [not null, unique, note: 'Código de emparejamiento (US-07)']
+  status             device_status [not null, default: 'offline']
+  battery_level      tinyint       [note: '0-100. Bajo 20% dispara alerta low_battery']
+  last_heartbeat     datetime
+  paired_at          datetime
+
+  Note: 'Agregado IotDevice: pulsera, colgante o reloj con GPS y botón de pánico.'
+}
+
+Table telemetry_events {
+  id            bigint               [pk, increment]
+  device_id     bigint               [not null]
+  event_type    telemetry_event_type [not null]
+  latitude      decimal(9,6)
+  longitude     decimal(9,6)
+  battery_level tinyint
+  recorded_at   datetime             [not null, note: 'Hora reportada por el dispositivo']
+  received_at   datetime             [not null, default: `CURRENT_TIMESTAMP`, note: 'Hora de ingesta en la API']
+
+  indexes {
+    (device_id, recorded_at)
+    (device_id, event_type)
+  }
+
+  Note: 'Eventos crudos que envía el dispositivo (ubicación, batería, pánico). Value objects Telemetry.'
+}
+
+// =====================================================================
+// 3. SAFE ZONES & RISK ALERTS
+// =====================================================================
+
+Table safe_zones {
+  id                 bigint       [pk, increment]
+  elderly_profile_id bigint       [not null]
+  name               varchar(100) [not null]
+  area               json         [not null, note: 'Área dibujada en el mapa (GeoJSON)']
+  created_at         datetime     [not null, default: `CURRENT_TIMESTAMP`]
+  updated_at         datetime     [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    elderly_profile_id
+  }
+
+  Note: 'US-10 / US-11. POST /api/elderly/{id}/safe-zones. Solo el cuidador administrador puede definirla o editarla.'
+}
+
+Table risk_rule_settings {
+  id                          bigint   [pk, increment]
+  elderly_profile_id          bigint   [not null, unique]
+  inactivity_threshold_minutes int     [not null, default: 60, note: 'Supuesto: la doc solo dice "tiempo configurado" (US-14)']
+  low_battery_threshold       tinyint  [not null, default: 20, note: 'Umbral de batería baja (US-09)']
+
+  Note: 'Umbrales que usa RiskRuleEvaluator, configurables por adulto mayor.'
+}
+
+Table risk_alerts {
+  id                 bigint       [pk, increment]
+  elderly_profile_id bigint       [not null]
+  type               alert_type   [not null]
+  status             alert_status [not null, default: 'open']
+  latitude           decimal(9,6) [note: 'Ubicación al momento de la alerta (p. ej. pánico)']
+  longitude          decimal(9,6)
+  triggered_at       datetime     [not null, default: `CURRENT_TIMESTAMP`]
+  acknowledged_at    datetime
+
+  indexes {
+    (elderly_profile_id, status)
+    (elderly_profile_id, triggered_at)
+  }
+
+  Note: 'US-09, US-12, US-13, US-14, US-15. BG2: medir tiempo entre triggered_at y acknowledged_at.'
+}
+
+Table webhook_subscriptions {
+  id           bigint       [pk, increment]
+  caregiver_id bigint       [not null]
+  callback_url varchar(500) [not null]
+  is_active    boolean      [not null, default: true]
+  created_at   datetime     [not null, default: `CURRENT_TIMESTAMP`]
+
+  Note: 'TS-04. POST /api/webhooks: URL que recibe un POST cuando se genera una alerta.'
+}
+
+// =====================================================================
+// 4. LOCATION & ACTIVITY MONITORING
+// =====================================================================
+
+Table location_records {
+  id                 bigint       [pk, increment]
+  elderly_profile_id bigint       [not null]
+  latitude           decimal(9,6) [not null]
+  longitude          decimal(9,6) [not null]
+  recorded_at        datetime     [not null]
+
+  indexes {
+    (elderly_profile_id, recorded_at)
+  }
+
+  Note: 'Ubicación actual (US-16) e historial por rango de fechas (US-17). Se alimenta de los eventos de telemetría de IoT Device Management.'
+}
+
+Table activity_reports {
+  id                 bigint   [pk, increment]
+  elderly_profile_id bigint   [not null]
+  period_start       datetime [not null]
+  period_end         datetime [not null]
+  summary            text     [not null]
+  generated_at       datetime [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    (elderly_profile_id, period_start)
+  }
+
+  Note: 'US-18. Generado por ReportScheduler (por ejemplo, semanal).'
+}
+
+// =====================================================================
+// 5. SUBSCRIPTION & BILLING
+// =====================================================================
+
+Table plans {
+  id               bigint           [pk, increment]
+  name             varchar(100)     [not null, unique]
+  price            decimal(10,2)    [not null]
+  currency         char(3)          [not null, default: 'PEN', note: 'Supuesto de moneda']
+  billing_interval billing_interval [not null, default: 'monthly', note: 'Supuesto: necesario para calcular renewal_date']
+  benefits         json             [note: 'Lista de beneficios del plan']
+  is_active        boolean          [not null, default: true]
+
+  Note: 'US-24. Plan de suscripción visible en el Landing Page y en PlansView.'
+}
+
+Table subscriptions {
+  id           bigint              [pk, increment]
+  caregiver_id bigint              [not null, note: 'Cuidador administrador titular']
+  plan_id      bigint              [not null]
+  status       subscription_status [not null, default: 'active']
+  start_date   date                [not null]
+  renewal_date date                [not null]
+  auto_renew   boolean             [not null, default: true]
+  cancelled_at datetime
+  created_at   datetime            [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    (caregiver_id, status)
+    renewal_date
+  }
+
+  Note: 'US-19 / US-20 / US-21. Transiciones: active -> cancelled | expired.'
+}
+
+Table payments {
+  id                     bigint         [pk, increment]
+  subscription_id        bigint         [not null]
+  amount                 decimal(10,2)  [not null]
+  currency               char(3)        [not null]
+  status                 payment_status [not null, default: 'pending']
+  gateway_transaction_id varchar(100)   [unique, note: 'Id devuelto por el Payment Gateway externo']
+  created_at             datetime       [not null, default: `CURRENT_TIMESTAMP`]
+  paid_at                datetime
+
+  Note: 'Cobros procesados vía PaymentGatewayAdapter. No se guardan datos de tarjeta (los maneja el gateway).'
+}
+
+// =====================================================================
+// TABLAS ADICIONALES (cada una cuelga de UNA sola tabla: sin ciclos)
+// =====================================================================
+
+// --- Care Network & Account Management ---
+
+Table auth_tokens {
+  id           bigint       [pk, increment]
+  caregiver_id bigint       [not null]
+  token_hash   varchar(255) [not null, unique, note: 'Hash del token de acceso; nunca el token en claro']
+  issued_at    datetime     [not null, default: `CURRENT_TIMESTAMP`]
+  expires_at   datetime     [not null]
+  revoked_at   datetime
+
+  indexes {
+    (caregiver_id, expires_at)
+  }
+
+  Note: 'US-02 / TS-01. Tokens de acceso que emite CareNetworkCommandService en POST /api/auth/login.'
+}
+
+Table push_subscriptions {
+  id           bigint       [pk, increment]
+  caregiver_id bigint       [not null]
+  endpoint     varchar(500) [not null, note: 'Endpoint de notificación push del navegador del cuidador']
+  is_active    boolean      [not null, default: true]
+  created_at   datetime     [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    caregiver_id
+  }
+
+  Note: 'Suscripción push del cuidador (Notification Provider: email y push). Un cuidador puede tener varias.'
+}
+
+// --- Safe Zones & Risk Alerts ---
+
+Table alert_notifications {
+  id              bigint               [pk, increment]
+  alert_id        bigint               [not null]
+  channel         notification_channel [not null]
+  recipient_email varchar(255)         [note: 'Solo cuando channel = email']
+  status          delivery_status      [not null, default: 'pending']
+  error_message   varchar(255)
+  created_at      datetime             [not null, default: `CURRENT_TIMESTAMP`]
+  sent_at         datetime
+
+  indexes {
+    (alert_id, status)
+  }
+
+  Note: 'Envíos de la alerta a los cuidadores de la red vía NotificationAdapter (US-09, US-12, US-13, US-14).'
+}
+
+Table webhook_deliveries {
+  id                      bigint          [pk, increment]
+  webhook_subscription_id bigint          [not null]
+  payload                 json            [not null, note: 'Datos de la alerta enviados por POST a la callback_url']
+  http_status             smallint        [note: 'Código HTTP devuelto por la URL del developer']
+  status                  delivery_status [not null, default: 'pending']
+  attempted_at            datetime        [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    (webhook_subscription_id, attempted_at)
+  }
+
+  Note: 'TS-04. Registro de cada intento de WebhookDispatcher.'
+}
+
+// --- Subscription & Billing ---
+
+Table subscription_status_history {
+  id              bigint              [pk, increment]
+  subscription_id bigint              [not null]
+  from_status     subscription_status [note: 'NULL en la activación inicial']
+  to_status       subscription_status [not null]
+  reason          varchar(100)        [note: 'Ej.: pago exitoso, cancelación del cuidador, vencimiento']
+  changed_at      datetime            [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    (subscription_id, changed_at)
+  }
+
+  Note: 'US-19 / US-20 / US-21. Historial de transiciones active -> cancelled | expired (BG3: medir churn).'
+}
+
+// =====================================================================
+// RELACIONES
+// =====================================================================
+
+// Care Network & Account Management
+Ref: care_network_members.elderly_profile_id > elderly_profiles.id [delete: cascade]
+Ref: care_network_members.caregiver_id > caregivers.id [delete: cascade]
+Ref: invitations.elderly_profile_id > elderly_profiles.id [delete: cascade]
+
+// IoT Device Management
+Ref: iot_devices.elderly_profile_id - elderly_profiles.id [delete: set null]
+Ref: telemetry_events.device_id > iot_devices.id [delete: cascade]
+
+// Safe Zones & Risk Alerts
+Ref: safe_zones.elderly_profile_id > elderly_profiles.id [delete: cascade]
+Ref: risk_rule_settings.elderly_profile_id - elderly_profiles.id [delete: cascade]
+Ref: risk_alerts.elderly_profile_id > elderly_profiles.id [delete: cascade]
+Ref: webhook_subscriptions.caregiver_id > caregivers.id [delete: cascade]
+
+// Location & Activity Monitoring
+Ref: location_records.elderly_profile_id > elderly_profiles.id [delete: cascade]
+Ref: activity_reports.elderly_profile_id > elderly_profiles.id [delete: cascade]
+
+// Subscription & Billing
+Ref: subscriptions.caregiver_id > caregivers.id
+Ref: subscriptions.plan_id > plans.id
+Ref: payments.subscription_id > subscriptions.id
+
+// Tablas adicionales
+Ref: auth_tokens.caregiver_id > caregivers.id [delete: cascade]
+Ref: push_subscriptions.caregiver_id > caregivers.id [delete: cascade]
+Ref: alert_notifications.alert_id > risk_alerts.id [delete: cascade]
+Ref: webhook_deliveries.webhook_subscription_id > webhook_subscriptions.id [delete: cascade]
+Ref: subscription_status_history.subscription_id > subscriptions.id [delete: cascade]
+
+// =====================================================================
+// GRUPOS (uno por bounded context)
+// =====================================================================
+
+TableGroup care_network_account_management {
+  caregivers
+  elderly_profiles
+  care_network_members
+  invitations
+  auth_tokens
+  push_subscriptions
+}
+
+TableGroup iot_device_management {
+  iot_devices
+  telemetry_events
+}
+
+TableGroup safe_zones_risk_alerts {
+  safe_zones
+  risk_rule_settings
+  risk_alerts
+  webhook_subscriptions
+  alert_notifications
+  webhook_deliveries
+}
+
+TableGroup location_activity_monitoring {
+  location_records
+  activity_reports
+}
+
+TableGroup subscription_billing {
+  plans
+  subscriptions
+  payments
+  subscription_status_history
+}

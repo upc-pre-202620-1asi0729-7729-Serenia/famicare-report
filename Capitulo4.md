@@ -179,6 +179,4 @@
 
 ### <a name="database_diagrams"></a>4.8.1. Database Diagrams
 
-> **Qué incluir:** Database Diagram por cada Bounded Context: tablas, columnas, constraints (primary key, foreign key) y relaciones entre tablas, con explicación.
->
-> **Herramienta:** ERDPlus / LucidChart / MySQL Workbench / DataGrip / Hackolade.
+![diagrama-DB.svg](docs/diagrama-DB.svg)
