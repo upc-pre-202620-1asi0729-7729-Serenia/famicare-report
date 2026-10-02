@@ -18,13 +18,13 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y cuidado a 
 
 ### <a name="team_member_profile"></a>1.1.2. Perfiles de integrantes del equipo
 
-| Foto | Apellido y Nombre                                  | Descripción|
-|------|----------------------------------------------------|------|
-| <img src="./assets/readme/Emily.png" width ="300" height="300"> | *Arroyo Gonzales, Emily Juliette - U202311469* | Soy estudiante de la carrera de Ingeniería de Software, tengo 20 años, tengo experiencia en lenguajes como C++,Python, MongoDB,etc. En trabajos grupales me gusta aportar ideas que contribuyan a mi grupo y avanzar según lo asignado.
-| <img src="./assets/readme/Anthony.jpg" style=" object-fit: cover;" width ="300" height="300"> | *Yauri Barrios, Antony David - U202214499* | Soy estudiante de la carrera de Ingeniería de Software, tengo 22 años. Trabajo con stacks MERN & PERN, además de lenguajes como C++, C# y Java.
-| <img src="./assets/readme/Juan.jpg" width ="300" height="300"> | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
-| <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
-| <img src="" width ="300" height="300"> | *Nombre, apellido y código* | Descripción
+| Foto                                                                                          | Apellido y Nombre                                  | Descripción|
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------|------|
+| <img src="./assets/readme/Emily.png" width ="300" height="300">                               | *Arroyo Gonzales, Emily Juliette - U202311469*     | Soy estudiante de la carrera de Ingeniería de Software, tengo 20 años, tengo experiencia en lenguajes como C++,Python, MongoDB,etc. En trabajos grupales me gusta aportar ideas que contribuyan a mi grupo y avanzar según lo asignado.
+| <img src="./assets/readme/Anthony.jpg" style=" object-fit: cover;" width ="300" height="300"> | *Yauri Barrios, Antony David - U202214499*         | Soy estudiante de la carrera de Ingeniería de Software, tengo 22 años. Trabajo con stacks MERN & PERN, además de lenguajes como C++, C# y Java.
+| <img src="./assets/readme/Juan.jpg" width ="300" height="300">                                | *Estupiñan Olortegui, Juan Sebastian - U202223405* | Estudiante de Ingeniería de Software, con habilidades en C++, Java, Angular, HTML y Docker, también desarrollo diseño para aplicaciones y plataformas de web design. Soy demasiado dispuesto a trabajar en equipo y coordinar las tareas entre todos.
+| <img src="./assets/readme/nicolas.png" width ="300" height="300">                             | *Atoche Gonzales, Nicolas Fernando u20241d317*     | Actualmente estoy en el sexto ciclo de la carrera de ingeniería de software. Poseo un conocimiento básico/intermedio en programación con C++, Lua, Luau, Python y Java. Además, cuento con conocimientos básicos en el desarrollo de videojuegos. Suelo orientarme por el conocimiento y el pensamiento lógico, con lo cual suelo buscar la solución más óptima y ágil dentro de un problema a través de pasos sencillos y definidos que construyan una base sólida donde pueda desarrollar respuestas claras y efectivas.
+| <img src="" width ="300" height="300">                                                        | *Nombre, apellido y código*                        | Descripción
 
 ## <a name="solution_profile"></a>1.2. Solution Profile
 
