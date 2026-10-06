@@ -267,10 +267,10 @@ Se diseñaron dos guías de entrevista, una por cada segmento objetivo identific
 
 ### <a name="user_personas"></a>2.3.1 User Personas
 
-User Persona Segmento 1 — Cuidadores:
+User Persona Segmento 1 — Adultos mayores:
 ![UserPersonaSegmento1](./assets/readme/needfinding_seg_1.png)
 
-User Persona Segmento 2 — Adultos mayores:
+User Persona Segmento 2 — Cuidadores:
 ![UserPersonaSegmento2](./assets/readme/needfinding_seg_2.png)
 
 ### <a name="user_task_matrix"></a>2.3.2 User Task Matrix
