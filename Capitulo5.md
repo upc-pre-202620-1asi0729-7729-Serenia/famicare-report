@@ -334,7 +334,7 @@ correcciones y documentación desarrolladas durante el Sprint.
 
 ### <a name="sprint_2"></a>5.2.2. Sprint 2
 
-> **Qué incluir:** Avance del producto y del trabajo colaborativo del Sprint 2. **Entrega:** TB1 – Semana 7. **Meta de despliegue:** Nueva versión del Landing Page y primera versión de Frontend Web Applications desplegadas.
+El Sprint 2 contempló la evolución del Landing Page y el desarrollo de la primera versión funcional de la Web Application, focalizada en el onboarding del cuidador administrador, autenticación, catálogo de planes y confirmación de suscripción.
 
 
 #### <a name="sprint_2_planning"></a>5.2.2.1. Sprint Planning 2
@@ -344,109 +344,69 @@ correcciones y documentación desarrolladas durante el Sprint.
 | Sprint # | Sprint 2 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| Date | YYYY-MM-DD |
-| Time | HH:MM AM/PM |
-| Location | (Ubicación de la reunión, física o virtual) |
-| Prepared By | Apellidos, Nombres |
-| Attendees (to planning meeting) | Apellidos, Nombres / ... |
-| Sprint 1 Review Summary | (Resumen del Sprint 1: resultados en productos de software, opiniones de miembros y feedback del product owner.) |
-| Sprint 1 Retrospective Summary | (Resumen del Sprint 1: aciertos y oportunidades de mejora en la forma de trabajo.) |
+| Date | 2026-09-23 |
+| Time | 07:30 PM |
+| Location | Microsoft Teams (Virtual) |
+| Prepared By | Estupiñan Olortegui, Juan Sebastián |
+| Attendees (to planning meeting) | Arroyo Gonzales Emily, Atoche Gonzales Nicolas, Estupiñan Olortegui Juan Sebastián, Razuri Ucañan Piero, Yauri Barrios Antony |
+| Sprint 1 Review Summary | El Landing Page cumplió con los requerimientos estéticos y responsive. Se sugirió optimizar el enrutamiento hacia la aplicación web. |
+| Sprint 1 Retrospective Summary | Acierto en el uso de Angular Material; oportunidad de mejora en la coordinación temprana de servicios RESTful compartidos. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Our focus is on \<Outcome\>. We believe it delivers \<Impact\> to \<Customer(s)\>. This will be confirmed when \<Event happens\>. |
-| Sprint 2 Velocity | (Story Points que el equipo puede aceptar en este Sprint) |
-| Sum of Story Points | (Suma de Story Points de los User Stories incluidos) |
+| Sprint 2 Goal | Nos centramos en ofrecer servicios de autenticación para cuidadores y en gestionar su incorporación a planes de suscripción. Consideramos que esto facilita a los cuidadores una configuración de cuenta fluida y el acceso a mecanismos de monetización. Esto se verificará cuando un cuidador pueda registrarse, seleccionar un plan de suscripción y completar el proceso de confirmación de pago. |
+| Sprint 2 Velocity | 14 |
+| Sum of Story Points | 12 |
 
 
 #### <a name="sprint_2_leaders"></a>5.2.2.2. Aspect Leaders and Collaborators
 
-> **Qué incluir:** Introducción con los principales aspectos del Sprint (feature, bounded context, etc.) y la Leadership-and-Collaboration Matrix (LACX): quién lidera y quién colabora en cada aspecto. Debe guardar relación con los tasks del Sprint Backlog.
-
-| Team Member (Last Name, First Name) | GitHub Username | Aspect Name 1 — Leader (L) / Collaborator (C) | Aspect Name 2 — Leader (L) / Collaborator (C) | ... |
-| :--- | :--- | :---: | :---: | :---: |
-| Arroyo Gonzales, Emily Juliette | | | | |
-| Atoche Gonzales, Nicolas Fernando | | | | |
-| Estupiñan Olortegui, Juan Sebastián | | | | |
-| Razuri Ucañan, Piero Alejandro | | | | |
-| Yauri Barrios, Antony David | | | | |
+| Team Member (Last Name, First Name) | GitHub Username | Authentication Service & Register — Leader (L) / Collaborator (C) | Plan Selection UI — Leader (L) / Collaborator (C) | Payment Workflow (Success/Cancel) — Leader (L) / Collaborator (C) | Routing & Environments — Leader (L) / Collaborator (C) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Arroyo Gonzales, Emily Juliette |[Em2920](https://github.com/Em2920)| C | L | C | C |
+| Atoche Gonzales, Nicolas Fernando |[THECOMAX](https://github.com/THECOMAX)| C | C | L | C |
+| Estupiñan Olortegui, Juan Sebastián |[JuanSEstupinan](https://github.com/JuanSEstupinan)| L | C | C | L |
+| Razuri Ucañan, Piero Alejandro |[PieroR29](https://github.com/PieroR29)| C | C | C | C |
+| Yauri Barrios, Antony David |[KazeKesh](https://github.com/KazeKesh)| L | C | C | C |
 
 
 #### <a name="sprint_2_backlog"></a>5.2.2.3. Sprint Backlog 2
 
-> **Qué incluir:** Introducción con el objetivo del Sprint, screenshot del Board del Sprint, URL público del Board y tabla de User Stories con sus Work-items/Tasks. Los artefactos de texto se redactan en el informe, no como captura.
->
-> **Herramienta:** Trello / Jira / YouTrack / Pivotal Tracker.
-
-| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status (To-do / InProcess / ToReview / Done) |
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 | :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
-| | | | | | | | |
+| US-01 | Registro de cuidador administrador | TS2-01 | Create AuthService | Implementar `auth.service.ts` con métodos HTTP para registro y login | 6 | Estupiñan, Juan | Done |
+| US-01 | Registro de cuidador administrador | TS2-02 | Develop Register Component | Crear vista `register` con validaciones de formulario reactivo | 8 | Yauri, Antony | Done |
+| US-24 | Consultar planes y precios | TS2-03 | Develop Plan Selection View | Implementar `plan-selection` con tarjetas comparativas de precios | 6 | Arroyo, Emily | Done |
+| US-19 | Activar suscripción | TS2-04 | Develop Payment Success View | Crear vista `payment-success` con confirmación de activación | 4 | Atoche, Nicolas | Done |
+| US-19 | Activar suscripción | TS2-05 | Develop Payment Cancel View | Crear vista `payment-cancel` con alternativas ante cancelación | 4 | Atoche, Nicolas | Done |
+| US-02 | Inicio de sesión | TS2-06 | Configure Application Routing | Configurar `app.routes.ts` y variables en `environments/` | 4 | Estupiñan, Juan | Done |
 
 
 #### <a name="sprint_2_dev_evidence"></a>5.2.2.4. Development Evidence for Sprint Review
 
-> **Qué incluir:** Introducción con los principales avances de implementación en Landing Page, Web Applications y Web Services, y tabla de commits por repositorio (Conventional Commits, ramas GitFlow).
-
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | :--- | :--- | :---: | :--- | :--- | :---: |
-| | | | | | |
-
+| famicare-frontend | feature/auth | `7a12b90` | `feat(auth): implement auth.service.ts with registration flow` | Añade servicio de autenticación y manejo de sesión | 2026-09-25 |
+| famicare-frontend | feature/register | `8c34d11` | `feat(app): create register form component` | Maqueta formulario reactivo de registro de cuidador administrador | 2026-09-28 |
+| famicare-frontend | feature/plans | `9d56e22` | `feat(subs): implement plan-selection component with pricing tiers` | Muestra planes básico y avanzado con Material Cards | 2026-10-01 |
+| famicare-frontend | feature/payment | `1e78f33` | `feat(subs): add payment-success and payment-cancel views` | Completa el ciclo de respuesta de la pasarela de pago | 2026-10-03 |
+| famicare-frontend | develop | `2f90a44` | `refactor(routes): organize routing and environment configurations` | Centraliza enrutamiento de la Web App en `app.routes.ts` | 2026-10-05 |
 
 #### <a name="sprint_2_exec_evidence"></a>5.2.2.5. Execution Evidence for Sprint Review
 
-> **Qué incluir:** Resumen de lo alcanzado, screenshots de las principales vistas implementadas y enlace a un video que muestre la visualización y navegación logradas en el Sprint.
->
-> **Video:** `upc-pre-202620-1asi0729-7729-serenia-product-navigation-sprint-2.mp4`
+Se logró la integración completa del embudo de conversión y acceso: el usuario puede seleccionar un plan desde el Landing Page, ser dirigido al registro de cuenta (`register`), simular el proceso de pago y recibir confirmación en pantalla (`payment-success`).
 
 
 #### <a name="sprint_2_services_docs"></a>5.2.2.6. Services Documentation Evidence for Sprint Review
 
-> **Qué incluir:** Endpoints documentados con OpenAPI (Swagger) dentro del alcance del Sprint: verbo HTTP, sintaxis de llamada, parámetros, ejemplo y explicación del response, y enlace a la documentación desplegada (URL local si aún no hay despliegue). Incluir capturas de la interacción con datos de muestra, URL del repositorio de Web Services y ids de los commits de documentación.
-
 | Endpoint | Acción (verbo HTTP) | Sintaxis de llamada | Parámetros | Ejemplo y explicación del response | Enlace a la documentación (OpenAPI / Swagger) |
 | :--- | :---: | :--- | :--- | :--- | :--- |
-| | | | | | |
+| `/api/v1/auth/register` | POST | `/api/v1/auth/register` | Body: `{ email, password, fullName, phone }` | `201 Created`: `{ "token": "jwt_token_sample", "caregiverId": "c-101" }` | `http://localhost:8080/swagger-ui/index.html` |
+| `/api/v1/subscriptions/checkout` | POST | `/api/v1/subscriptions/checkout` | Body: `{ caregiverId, planId }` | `200 OK`: `{ "sessionUrl": "https://checkout.stripe.com/..." }` | `http://localhost:8080/swagger-ui/index.html` |
 
 
 #### <a name="sprint_2_deployment_evidence"></a>5.2.2.7. Software Deployment Evidence for Sprint Review
 
-> **Qué incluir:** Procesos de despliegue realizados en el Sprint para Landing Page, Web Applications y Web Services (cuentas, recursos en cloud providers, configuración de integración/automatización), con capturas y explicación de los pasos.
-
+Se desplegó una nueva versión (v1.1.0) en Vercel que incluye tanto la Landing Page actualizada como las nuevas rutas de la Web Application (`/register`, `/plans`, `/payment/success`, `/payment/cancel`). Se validaron variables de entorno dinámicas en `environment.development.ts` y `environment.ts` para conectar con el backend de pruebas.
 
 #### <a name="sprint_2_collab_insights"></a>5.2.2.8. Team Collaboration Insights during Sprint
 
-> **Qué incluir:** Cómo se desarrollaron las actividades de implementación y capturas de los analíticos de colaboración y commits en GitHub. Todos los integrantes deben participar en la implementación de cada producto que corresponda al Sprint.
-
-
-
-## <a name="validation_interviews"></a>5.3. Validation Interviews
-
-> **Qué incluir:** Actividades de validación en las que usuarios de los segmentos objetivo interactúan con el Landing Page y las aplicaciones. Se aplica el formato de evaluación heurística del proyecto.
->
-> **Entrega:** desde AV2 – Semana 12.
-
-
-### <a name="validation_interviews_design"></a>5.3.1. Diseño de Entrevistas
-
-> **Qué incluir:** Por cada segmento objetivo: elementos a incluir en la sesión de validación (Landing Page y aplicaciones) y los user flows que se evaluarán.
-
-
-### <a name="validation_interviews_record"></a>5.3.2. Registro de Entrevistas
-
-> **Qué incluir:** De 3 a 5 entrevistas por segmento. Por cada una: nombres, apellidos, edad, distrito, screenshot del video, URL en Microsoft Stream con timing de inicio y duración, y resumen descriptivo de las apreciaciones del entrevistado sobre las tareas asignadas.
->
-> **Video:** `upc-pre-202620-1asi0729-7729-serenia-validation-sprint-<n>.mp4` (3 a 5 minutos por entrevista, con títulos de entrevistado, segmento y fecha).
-
-
-### <a name="validation_heuristics"></a>5.3.3. Evaluaciones según heurísticas
-
-> **Qué incluir:** Evaluación de cada sesión según heurísticas de usabilidad, arquitectura de información y diseño inclusivo, con la estructura del formato del Anexo D del enunciado: site o app evaluada, tareas evaluadas y no evaluadas, escala de severidad (1 a 4), tabla resumen y descripción de cada problema con captura y recomendación.
-
-| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
-| :---: | :--- | :---: | :--- |
-| 1 | | | |
-
-
-## <a name="video_about_the_product"></a>5.4. Video About-the-Product
-
-> **Qué incluir:** Introducción y descripción del video promocional dirigido a visitantes del Landing Page y usuarios de las aplicaciones. Tono consistente con el del producto, escenas de interacción con el producto y al menos un testimonio positivo de un usuario de las entrevistas de validación por segmento. Incluir screenshot, URL en Microsoft Stream, URL en YouTube (el que se incrusta en el Landing Page) y duración (1 a 3 minutos).
->
-> **Video:** `upc-pre-202620-1asi0729-7729-serenia-about-the-product-sprint-<n>.mp4`
+Se observó una mayor sinergia entre los integrantes gracias a la delimitación de tareas en el Sprint Backlog. El desarrollo paralelo de vistas de suscripción y formularios reactivos de registro permitió cumplir el 100% de los Story Points comprometidos sin incurrir en cuellos de botella.
