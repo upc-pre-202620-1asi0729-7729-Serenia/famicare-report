@@ -278,13 +278,59 @@ Permite registrar un nuevo cuidador administrador en la plataforma.
 
 #### <a name="sprint_1_deployment_evidence"></a>5.2.1.7. Software Deployment Evidence for Sprint Review
 
-> **Qué incluir:** Procesos de despliegue realizados en el Sprint para Landing Page, Web Applications y Web Services (cuentas, recursos en cloud providers, configuración de integración/automatización), con capturas y explicación de los pasos.
+Durante el Sprint 1 no se realizó un despliegue de la solución en un entorno de
+producción o en un proveedor de servicios cloud. Las funcionalidades desarrolladas
+durante este Sprint fueron ejecutadas y validadas únicamente en un entorno local
+de desarrollo.
 
+La ejecución local permitió al equipo verificar el funcionamiento de las
+funcionalidades correspondientes al registro del cuidador administrador y al inicio
+de sesión, así como validar la navegación y comportamiento de las vistas
+implementadas.
+
+### Entorno de desarrollo local
+
+Durante el Sprint se utilizó el entorno local para ejecutar y validar la aplicación.
+Las principales rutas utilizadas para la validación fueron:
+
+| Componente | URL local | Estado |
+|---|---|---|
+| Web Application - Registro | `http://localhost:4200/register` | Implementado y probado localmente |
+| Web Application - Inicio de sesión | `http://localhost:4200/login` | Implementado y probado localmente |
 
 #### <a name="sprint_1_collab_insights"></a>5.2.1.8. Team Collaboration Insights during Sprint
 
-> **Qué incluir:** Cómo se desarrollaron las actividades de implementación y capturas de los analíticos de colaboración y commits en GitHub. Todos los integrantes deben participar en la implementación de cada producto que corresponda al Sprint.
+Durante el Sprint 1, el equipo trabajó colaborativamente en la implementación de
+las funcionalidades relacionadas con la gestión inicial de cuentas y la red de
+cuidado de FamiCare. Las actividades fueron distribuidas entre los integrantes
+considerando las tareas definidas en el Sprint Backlog.
 
+### Actividades realizadas por los integrantes
+
+| Alumno | Actividad |
+|---|---|
+| Arroyo Gonzales, Emily Juliette | Diseño e implementación de las interfaces de registro e inicio de sesión, además de validaciones de formularios. |
+| Atoche Gonzales, Nicolas Fernando | Implementación de funcionalidades relacionadas con el registro y gestión de datos del adulto mayor. |
+| Estupiñan Olortegui, Juan Sebastián | Implementación de la persistencia y relación de datos entre el cuidador y el adulto mayor. |
+| Razuri Ucañán, Piero Alejandro | Desarrollo de pruebas y validación de las funcionalidades de autenticación y registro. |
+| Yauri Barrios, Antony David | Implementación de servicios relacionados con el registro y autenticación de usuarios. |
+
+### Colaboración mediante Git
+
+El desarrollo del Sprint se realizó utilizando Git y GitHub como herramientas de
+control de versiones y colaboración. Los integrantes trabajaron sobre el
+repositorio del proyecto, realizando commits asociados a las funcionalidades,
+correcciones y documentación desarrolladas durante el Sprint.
+
+### Identificación de integrantes
+
+| Username (GitHub) | Nombre |
+|---|---|
+| `Em2920` | Arroyo Gonzales, Emily Juliette |
+| `THECOMAX` | Atoche Gonzales, Nicolas Fernando |
+| `JuanSEstupinan` | Estupiñan Olortegui, Juan Sebastián |
+| `PieroR29` | Razuri Ucañán, Piero Alejandro |
+| `KazeKesh` | Yauri Barrios, Antony David |
 
 ### <a name="sprint_2"></a>5.2.2. Sprint 2
 
