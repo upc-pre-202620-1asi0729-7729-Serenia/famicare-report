@@ -267,25 +267,53 @@ Se diseñaron dos guías de entrevista, una por cada segmento objetivo identific
 
 ### <a name="user_personas"></a>2.3.1 User Personas
 
-Realizar
-
 User Persona Segmento 1 — Cuidadores:
-![UserPersonaSegmento1](./assets/readme/user_persona_seg1)
+![UserPersonaSegmento1](./assets/readme/needfinding_seg_1.png)
 
 User Persona Segmento 2 — Adultos mayores:
-![UserPersonaSegmento2](./assets/readme/user_persona_seg2)
+![UserPersonaSegmento2](./assets/readme/needfinding_seg_2.png)
 
 ### <a name="user_task_matrix"></a>2.3.2 User Task Matrix
 
-Realizar
+Las siguientes matrices clasifica las tareas que desempeñan ambos perfiles en la solución Famicare, valorando su frecuencia temporal y su nivel de criticidad para la seguridad del usuario.
+
+Segmento 1: Adultos Mayores Autónomos – Patricia Suarez
+
+| Tarea (Task) | Frecuencia | Importancia | Contexto y Justificación |
+| :--- | :---: | :---: | :--- |
+| Portar pulsera discreta y ligera en salidas cotidianas | Diaria | Alta | Prefiere un accesorio fácil de llevar que no incomode en parques o comercios. |
+| Activar botón de auxilio SOS ante emergencias | Raras veces / Emergencia | Alta | Para usarlo ante caídas repentinas, malestares físicos o desorientación fuera de casa. |
+| Recargar batería del dispositivo | Diaria / Interdiaria | Alta | Requiere un proceso simple que no demande configuraciones complejas. |
+| Gestionar privacidad de la ubicación | Ocasional / Inicial | Alta | Permite que su familia conozca su ubicación siempre que no invada su intimidad. |
+| Interactuar con aplicaciones móviles nuevas | Rara vez / Inicial | Baja | Manifiesta dificultad para familiarizarse con nuevas aplicaciones, prefiriendo la pulsera. |
+| Consultar mapa de ubicación en tiempo real | Nunca | Baja | Ella no consulta la app para ubicarse; la utilidad radica en ser localizada si lo necesita. |
+
+Segmento 2: Cuidadores – Betsabé Olortegui
+
+| Tarea (Task) | Frecuencia | Importancia | Contexto y Justificación |
+| :--- | :---: | :---: | :--- |
+| Monitorear el estado del adulto mayor a la distancia | Varias veces al día | Alta | Brinda tranquilidad continua al estar lejos de su padre con condición oncológica. |
+| Coordinar con otros familiares el cuidado compartido | Diaria / Frecuente | Alta | Facilita la comunicación y el relevo con parientes que asisten al paciente en el momento. |
+| Recibir y responder a alertas críticas de emergencia | Ocasional (según evento) | Alta | Permite enterarse al instante de cualquier caída o complicación médica grave. |
+| Configurar y delimitar geocercas de seguridad | Mensual | Alta | Asegura que el paciente se mantenga en entornos seguros de cuidado o atención médica. |
+| Supervisar la recarga y conectividad del dispositivo | Diaria | Alta | Garantiza que el equipo esté operativo sin interrupciones. |
+| Gestionar la suscripción y membresía del servicio | Mensual | Media | Mantiene activa la plataforma de monitoreo familiar. |
 
 ### <a name="user_journey_mapping"></a>2.3.3 User Journey Mapping
 
-REALIZAR
+Segmento 1: Adultos mayores autónomos
+![JMSeg1](./assets/readme/journey-map_seg_1.png)
+
+Segmento 2: Cuidadores
+![JMSeg1](./assets/readme/journey-map_seg_2.png)
 
 ### <a name="empathy_mapping"></a>2.3.4 Empathy Mapping
 
-Realizar
+Segmento 1: Adultos mayores autónomos
+![JMSeg1](./assets/readme/empathymap_seg_1.png)
+
+Segmento 2: Cuidadores
+![JMSeg1](./assets/readme/empathymap_seg_2.png)
 
 ## <a name="bpes"></a>2.4 Big Picture Event Storming
 
