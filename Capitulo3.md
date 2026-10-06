@@ -57,7 +57,7 @@ Segmento 1 - Adultos Mayores:
 
 ![ImpactMappingSegmento1](./assets/readme/impact_map_1.png)
 
-Segmento 1 - Cuidadores:
+Segmento 2 - Cuidadores:
 
 ![ImpactMappingSegmento1](./assets/readme/impact_map_2.png)
 
