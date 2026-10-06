@@ -51,18 +51,15 @@ Se utilizan los roles Cuidador (administrador), Cuidador (colaborador), Adulto m
 
 ## <a name="impact_mapping"></a>3.2 Impact Mapping
 
-REALIZAR EN MIRO
-
 El Impact Map conecta los Business Goals con los Actors/Personas que pueden ayudar a lograrlos, el Impact (cambio de comportamiento esperado en ellos) y los Deliverables (lo que el equipo construye para lograr ese impacto), de los cuales se derivan las User Stories.
 
-**Business Goals (SMART)**
+Segmento 1 - Adultos Mayores:
 
-BG1: Alcanzar 300 cuidadores administradores con suscripción activa en un plazo de 6 meses desde el lanzamiento del MVP.
+![ImpactMappingSegmento1](./assets/readme/impact_map_1.png)
 
-BG2: Lograr que el 70% de las alertas de riesgo generadas sean marcadas como atendidas por un cuidador en menos de 10 minutos, durante los primeros 3 meses de operación.
+Segmento 1 - Cuidadores:
 
-BG3: Reducir la tasa de cancelación de suscripciones (churn) a menos del 8% mensual durante el primer semestre de operación.
-
+![ImpactMappingSegmento1](./assets/readme/impact_map_2.png)
 
 ## <a name="product_backlog"></a>3.3 Product Backlog
 
