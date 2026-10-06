@@ -317,7 +317,7 @@ Segmento 2: Cuidadores
 
 ## <a name="bpes"></a>2.4 Big Picture Event Storming
 
-REALIZAR
+![BigPictureEventStorming](./assets/readme/BigPictureEventStorming.jpg)
 
 ## <a name="ubiquitous_language"></a>2.5 Ubiquitous Language
 
