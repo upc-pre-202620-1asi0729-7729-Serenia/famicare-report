@@ -1,9 +1,18 @@
 # <a name="bibliografia"></a>Bibliografía
 
-> **Qué incluir:** Todas las referencias bibliográficas en formato APA usadas como base del trabajo o citadas en cualquier sección del informe.
-
-> **Referencias ya citadas en el informe que deben registrarse:**
->
-> - Gothelf, J., & Seiden, J. (2021). *Lean UX* (3.ª ed.). O'Reilly Media. *(verificar edición y formato)*
-> - Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley. *(verificar formato)*
-> - INEI — fuente del dato de población adulta mayor citado en la sección 1.2.1. *(completar con el documento y el año exactos)*
+- Instituto Nacional de Estadística e Informática. (2023). Situación de la Población Adulta Mayor: Informe Técnico N° 2 (Enero-Febrero-Marzo 2023). INEI. [https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico-adulto-mayor-ene-feb-mar-2023.pdf](https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico-adulto-mayor-ene-feb-mar-2023.pdf)
+- Organización Panamericana de la Salud. (2020). La década del envejecimiento saludable en las Américas (2021-2030). Organización Panamericana de la Salud / Organización Mundial de la Salud. [https://www.paho.org/es/decada-envejecimiento-saludable-americas-2021-2030](https://www.paho.org/es/decada-envejecimiento-saludable-americas-2021-2030)
+- Ministerio de la Mujer y Poblaciones Vulnerables. (2021). Política Nacional Multisectorial para las Personas Adultas Mayores al 2030. MIMP. [https://www.gob.pe/institucion/mimp/normas-legales/1961677-006-2021-mimp](https://www.gob.pe/institucion/mimp/normas-legales/1961677-006-2021-mimp)
+- Adzic, G. (2012). Impact mapping: Making a big impact with software products and projects. Provoking Thoughts. [https://www.impactmapping.org/book.html](https://www.impactmapping.org/book.html)
+- Gothelf, J., & Seiden, J. (2021). Lean UX: Designing great products with agile teams (3.ª ed.). O'Reilly Media. [https://www.oreilly.com/library/view/lean-ux-3rd/9781098108502/](https://www.oreilly.com/library/view/lean-ux-3rd/9781098108502/)
+- Rubin, K. S. (2012). Essential Scrum: A practical guide to the most popular agile process. Addison-Wesley Professional. [https://www.informit.com/store/essential-scrum-a-practical-guide-to-the-most-popular-9780137043293](https://www.informit.com/store/essential-scrum-a-practical-guide-to-the-most-popular-9780137043293)
+- Schwaber, K., & Sutherland, J. (2020). La Guía de Scrum: Las reglas del juego. Scrum.org. [https://scrumguides.org/scrum-guide.html](https://scrumguides.org/scrum-guide.html)
+- Brandolini, A. (2021). Introducing EventStorming: An act of deliberate collective learning. Leanpub. [https://leanpub.com/introducing_eventstorming](https://leanpub.com/introducing_eventstorming)
+- Brown, S. (2018). The C4 model for visualising software architecture. C4 Model. [https://c4model.com/](https://c4model.com/)
+- Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley Professional. [https://www.domainlanguage.com/ddd/](https://www.domainlanguage.com/ddd/)
+- Vernon, V. (2013). Implementing Domain-Driven Design. Addison-Wesley Professional. [https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
+- Google. (2023). Material Design 3: Specifications and guidelines. Google Design. [https://m3.material.io/](https://m3.material.io/)
+- Google Angular Team. (2024). Angular documentation: Standalone components, routing and internationalization. Google Open Source. [https://angular.dev/](https://angular.dev/)
+- World Wide Web Consortium. (2018). Web Content Accessibility Guidelines (WCAG) 2.1: W3C Recommendation. W3C. [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/)
+- Baig, M. M., GholamHosseini, H., Moqeem, A. A., Mirza, F., & Lindén, M. (2017). A systematic review of wearable patient monitoring systems—current challenges and future opportunities for clinical adoption. Journal of Medical Systems, 41(7), 115. [https://doi.org/10.1007/s10916-017-0760-1](https://doi.org/10.1007/s10916-017-0760-1)
+- Majumder, S., Aghayi, E., Noferesti, M., Memarzadeh-Tehran, H., Mondal, T., Pang, Z., & Deen, M. J. (2017). Smart homes for elderly healthcare—Recent advances and research challenges. Sensors, 17(11), 2496. [https://doi.org/10.3390/s17112496](https://doi.org/10.3390/s17112496)
