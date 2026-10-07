@@ -1,16 +1,7 @@
 # <a name="conclusiones"></a>Conclusiones
 
-> **Qué incluir:** Cierre del trabajo. En AV1 y TB1 se presenta un avance; la versión final se entrega en TB2.
-
-
 ## <a name="conclusiones_recomendaciones"></a>Conclusiones y recomendaciones
 
-> **Qué incluir:** Conclusiones sobre los resultados en relación con el Problem Statement, los assumptions frente al comportamiento real de los segmentos, los Hypothesis Statements y los criterios de éxito definidos en Lean UX, contrastados con los resultados de las validaciones. Recomendaciones sobre los siguientes pasos y el roadmap de los productos digitales.
+El desarrollo del proyecto validó de manera consistente la problemática de cuidado y seguridad, evidenciando que los cuidadores familiares requieren reducir la sobrecarga emocional y la incertidumbre a distancia, mientras que los adultos mayores autónomos demandan un medio de auxilio inmediato y discreto que preserve su independencia sin hacerlos sentir sobreprotegidos ni vigilados. Asimismo, la articulación metodológica entre Lean UX, Impact Mapping y Product Backlog garantizó una trazabilidad directa hacia las metas comerciales, respaldada técnicamente por una arquitectura basada en Domain-Driven Design con cinco Bounded Contexts bien delimitados. Esto permitió completar satisfactoriamente los dos primeros sprints mediante una Landing Page bilingüe y responsiva, así como la primera versión funcional de la Web Application con registro de cuentas, catálogo de suscripciones y confirmación de pagos.
 
-
-## <a name="video_about_the_team"></a>Video About-The-Team
-
-> **Qué incluir:** Resumen de los aspectos más relevantes del video, pauta de secuencias con el tiempo de inicio de cada sección (hh:mm:ss), un cuadro de video representativo y las URL en Microsoft Stream y en YouTube (esta última se incrusta en el Landing Page). El video resume el proceso de trabajo con escenas de sesiones reales, narración en off y el testimonio de cada integrante sobre actividades realizadas, logro de outcomes y competencias desarrolladas (5 minutos de retrospectiva del grupo + 1 minuto por testimonio).
->
-> **Video:** `upc-pre-202620-1asi0729-7729-serenia-about-the-team-sprint-<n>.mp4`  
-> **Entrega:** primera versión en AV2 – Semana 12; versión final en TB2 – Semana 15.
+Para las siguientes etapas, es fundamental orientar las futuras pruebas de validación hacia participantes que representen con exactitud el rango etario objetivo del adulto mayor para enriquecer los resultados cualitativos. A nivel técnico, se debe priorizar en los próximos sprints la integración de los servicios backend de Monitor y Zones mediante mecanismos en tiempo real que procesen la telemetría de GPS, la inactividad y las alertas de ayuda dentro del objetivo de diez minutos, auditando de forma constante la accesibilidad WCAG para cuidadores y personas mayores. Finalmente, conviene incorporar un emulador de hardware que simule estados críticos de batería baja, fallas de conectividad y traspaso de geocercas antes de la salida a producción, garantizando así la solidez y resiliencia integral de la plataforma.
