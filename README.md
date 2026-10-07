@@ -56,13 +56,23 @@
 
 # Registro de Versiones del Informe
 
-
-**AV1**
-
-
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :--- | :--- |
-| AV1 | 18/09/2026 | Emily Arroyo<br>Nicolas Atoche<br>Juan Estupiñan<br>Piero Razuri<br>Antony Yauri | Creacion de estructura de informe en github. |
+| 1.1 | 21/09/2026 | Razuri Ucañan, Piero Alejandro | Redacción de la descripción de la startup, misión, visión y antecedentes de la problemática en el Capítulo 1 |
+| 1.2 | 22/09/2026 | Arroyo Gonzales, Emily Juliette | Formulación del Lean UX Process: Problem Statements, User & Business Assumptions y Lean UX Canvas |
+| 1.3 | 23/09/2026 | Atoche Gonzales, Nicolas Fernando | Elaboración del análisis competitivo y benchmarking frente a Life360, AngelSense y GCare en el Capítulo 2 |
+| 1.4 | 24/09/2026 | Estupiñan Olortegui, Juan Sebastian | Registro, transcripción y análisis cualitativo de las entrevistas al segmento objetivo de cuidadores familiares. |
+| 1.5 | 25/09/2026 | Yauri Barrios, Antony David | Elaboración del Customer Journey Mapping y diseño de la User Task Matrix para ambos segmentos. |
+| 1.6 | 26/09/2026 | Arroyo Gonzales, Emily Juliette | Creación de User Personas y Empathy Mapping en UXpressia para adultos mayores y cuidadores. |
+| 1.7 | 27/09/2026 | Atoche Gonzales, Nicolas Fernando | Estructuración del Impact Mapping en UXpressia y priorización del Product Backlog por Story Points. |
+| 1.8 | 28/09/2026 | Yauri Barrios, Antony David | Redacción y especificación de User Stories con criterios de aceptación Gherkin. |
+| 1.9 | 29/09/2026 | Razuri Ucañan, Piero Alejandro | Diseño de wireframes y wireflows para la Landing Page en versiones Desktop y Mobile Browser. |
+| 2.0 | 30/09/2026 | Arroyo Gonzales, Emily Juliette | Elaboración de Style Guidelines (paleta de colores, tipografía, espaciado y tema Angular Material). |
+| 2.1 | 01/10/2026 | Atoche Gonzales, Nicolas Fernando | Definición de Arquitectura de Información: sistemas de organización, rotulado, navegación y SEO Meta Tags. |
+| 2.2 | 02/10/2026 | Estupiñan Olortegui, Juan Sebastian | Modelado de arquitectura de software DDD y diagramas C4. |
+| 2.3 | 03/10/2026 | Yauri Barrios, Antony David | Diseño del modelo de base de datos relacional y elaboración de diagramas por Bounded Context. |
+| 2.4 | 04/10/2026 | Estupiñan Olortegui, Juan Sebastian | Documentación de Software Configuration Management, Sprint Planning 1 y evidencias de despliegue en Vercel. |
+| 2.5 | 05/10/2026 | Razuri Ucañan, Piero Alejandro | Consolidación de evidencias de desarrollo del Sprint 2, matriz LACX. |
 
 
 <div style="page-break-after: always;"></div>
@@ -74,16 +84,16 @@
 - Enlace del Repositorio:
 	 [https://github.com/upc-pre-202620-1asi0729-7729-Serenia/famicare-report](https://github.com/upc-pre-202620-1asi0729-7729-Serenia/famicare-report)
 
-**AV1**
-Para el desarrollo del AV1 cada participante del equipo realizo las siguientes tareas:
+**TB1**
+Para el desarrollo del TB1 cada participante del equipo realizo las siguientes tareas:
 
 | Integrante                            | Tareas Realizadas                                                      |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Arroyo Gonzales, Emily Juliette	 |   |
-| Atoche Gonzales, Nicolas Fernando                |  |
-| Estupiñan Olortegui, Juan Sebastián         |  |                                  
-| Razuri Ucañan, Piero Alejandro    | |
-| Yauri Barrios, Antony David         |  | 
+| Arroyo Gonzales, Emily Juliette	 | Desarrollo del Lean UX Process: Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Construcción de User Personas en UXpressia para ambos segmentos objetivo. Elaboración del Empathy Mapping y definición de la User Task Matrix. Definición de la guía de estilos visuales y paleta en material-theme.scss. |
+| Atoche Gonzales, Nicolas Fernando                | Elaboración del Análisis Competitivo y matriz SWOT frente a Life360, AngelSense y GCare. Construcción del Impact Mapping y estructuración del Product Backlog priorizado por Story Points. Definición de la arquitectura de información. Implementación frontend en Angular |
+| Estupiñan Olortegui, Juan Sebastián         | Conducción, grabación y análisis de la entrevista al Segmento 2. Modelado del Big Picture Event Storming. Configuración base del repositorio Angular, arquitectura standalone, dependencias e integración continua en Vercel. |                                  
+| Razuri Ucañan, Piero Alejandro    | Redacción del perfil de la startup, misión, visión y formulación de la problemática.Conducción y registro audiovisual de la entrevista al Segmento 1.Organización de sesiones de equipo y actas de coordinación.Diseño de wireframes preliminares en Figma para el Landing Page. |
+| Yauri Barrios, Antony David         | Conducción y registro audiovisual de la entrevista al Segmento 2. Mapeo del Customer Journey Map para ambos segmentos en UXpressia. Especificación formal de las Historias de Usuario bajo criterios de aceptación Gherkin. Implementación frontend en Angular de los componentes modulares. Aseguramiento del diseño responsive y revisión de Pull Requests en GitHub. | 
 
 <div style="page-break-after: always;"></div>
 
@@ -176,32 +186,8 @@ Para el desarrollo del AV1 cada participante del equipo realizo las siguientes t
             - [5.2.2.6. Services Documentation Evidence for Sprint Review](Capitulo5.md#sprint_2_services_docs)
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](Capitulo5.md#sprint_2_deployment_evidence)
             - [5.2.2.8. Team Collaboration Insights during Sprint](Capitulo5.md#sprint_2_collab_insights)
-        - [5.2.3. Sprint 3](Capitulo5.md#sprint_3)
-            - [5.2.3.1. Sprint Planning 3](Capitulo5.md#sprint_3_planning)
-            - [5.2.3.2. Aspect Leaders and Collaborators](Capitulo5.md#sprint_3_leaders)
-            - [5.2.3.3. Sprint Backlog 3](Capitulo5.md#sprint_3_backlog)
-            - [5.2.3.4. Development Evidence for Sprint Review](Capitulo5.md#sprint_3_dev_evidence)
-            - [5.2.3.5. Execution Evidence for Sprint Review](Capitulo5.md#sprint_3_exec_evidence)
-            - [5.2.3.6. Services Documentation Evidence for Sprint Review](Capitulo5.md#sprint_3_services_docs)
-            - [5.2.3.7. Software Deployment Evidence for Sprint Review](Capitulo5.md#sprint_3_deployment_evidence)
-            - [5.2.3.8. Team Collaboration Insights during Sprint](Capitulo5.md#sprint_3_collab_insights)
-        - [5.2.4. Sprint 4](Capitulo5.md#sprint_4)
-            - [5.2.4.1. Sprint Planning 4](Capitulo5.md#sprint_4_planning)
-            - [5.2.4.2. Aspect Leaders and Collaborators](Capitulo5.md#sprint_4_leaders)
-            - [5.2.4.3. Sprint Backlog 4](Capitulo5.md#sprint_4_backlog)
-            - [5.2.4.4. Development Evidence for Sprint Review](Capitulo5.md#sprint_4_dev_evidence)
-            - [5.2.4.5. Execution Evidence for Sprint Review](Capitulo5.md#sprint_4_exec_evidence)
-            - [5.2.4.6. Services Documentation Evidence for Sprint Review](Capitulo5.md#sprint_4_services_docs)
-            - [5.2.4.7. Software Deployment Evidence for Sprint Review](Capitulo5.md#sprint_4_deployment_evidence)
-            - [5.2.4.8. Team Collaboration Insights during Sprint](Capitulo5.md#sprint_4_collab_insights)
-    - [5.3. Validation Interviews](Capitulo5.md#validation_interviews)
-        - [5.3.1. Diseño de Entrevistas](Capitulo5.md#validation_interviews_design)
-        - [5.3.2. Registro de Entrevistas](Capitulo5.md#validation_interviews_record)
-        - [5.3.3. Evaluaciones según heurísticas](Capitulo5.md#validation_heuristics)
-    - [5.4. Video About-the-Product](Capitulo5.md#video_about_the_product)
 - [Conclusiones](Conclusiones.md#conclusiones)
     - [Conclusiones y recomendaciones](Conclusiones.md#conclusiones_recomendaciones)
-    - [Video About-The-Team](Conclusiones.md#video_about_the_team)
 - [Bibliografía](Bibliografia.md#bibliografia)
 - [Anexos](Anexos.md#anexos)
     - [Anexo A. Videos de Exposiciones](Anexos.md#anexo_a)
@@ -219,7 +205,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describen las acciones realizadas y conclusiones por parte del grupo, que permiten sustentar el logro del ABET – EAC - Student Outcome 3.
 
-| **Criterio Específico** | **Acciones realizadas** | **Conclusiones** |
-|-------------------------|-------------------------|------------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.**  | **Juan Sebastian Estupiñan**<br><br>  <br><br>**AV1:** Participó en las revisiones junto con los demás integrantes para coordinar con los temas de planeación sobre el informe y el diseño de nuestro producto.<br><br> | El trabajo colaborativo realizado permitió empezar a fortalecer las capacidades de comunicación oral del equipo al presentar propuestas para nuestro producto y avances funcionales que nos ayudarán a progresar en este proyecto. Asimismo, las reuniones de coordinación y revisiones funcionales permitieron comunicar efectivamente nuestras ideas técnicas y funcionales. |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia** | **Juan Sebastian Estupiñan**<br><br>  <br><br>**AV1:** Estructuración del informe junto con los demás integrantes para realizar cada tarea asignada.<br><br> | La elaboración continua de documentación permitirá fortalecer la capacidad del equipo para comunicar información técnica y funcional de manera clara y organizada. A su vez, facilitará la comprensión del sistema tanto para usuarios como para integrantes del proyecto. |
+| Criterio Específico | Acciones realizadas | Conclusiones |
+| :--- | :--- | :--- |
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Arroyo Gonzales, Emily Juliette**<br>**TB1:** Presentó oralmente los hallazgos del Lean UX Canvas y los User Personas durante las reuniones de equipo, exponiendo con claridad las necesidades, frustraciones y motivaciones de los usuarios objetivos.<br><br>**Atoche Gonzales, Nicolas Fernando**<br>**TB1:** Expuso en las llamadas grupales el análisis comparativo de competidores (benchmarking) y sustentó oralmente la priorización del Product Backlog según el valor de negocio y los Story Points.<br><br>**Estupiñan Olortegui, Juan Sebastian**<br>**TB1:** Condujo la entrevista cualitativa a la cuidadora familiar adaptando el lenguaje técnico a un tono accesible y empático; asimismo, lideró la comunicación oral en las sesiones de Sprint Planning para alinear el alcance de la arquitectura y la Web Application.<br><br>**Razuri Ucañan, Piero Alejandro**<br>**TB1:** Realizó la entrevista al segmento de adultos mayores empleando un diálogo claro, respetuoso y no invasivo; además, comunicó activamente propuestas sobre la organización del equipo y la introducción del proyecto en las sesiones semanales.<br><br>**Yauri Barrios, Antony David**<br>**TB1:** Condujo la entrevista al segmento de cuidadores y expuso ante el equipo técnico el desglose de los flujos de usuario y la viabilidad de los criterios de aceptación para el frontend y backend. | **TB1**<br>Durante esta entrega del proyecto, el equipo fortaleció de manera integral su competencia de comunicación oral al interactuar eficazmente con diversos tipos de audiencia. Por un lado, se demostró versatilidad y empatía al entrevistar directamente a adultos mayores y cuidadores familiares, ajustando el registro de lenguaje para transmitir confianza y obtener retroalimentación valiosa sin abrumar con tecnicismos. Por otro lado, en el ámbito interno y académico, las reuniones semanales de sincronización y las sesiones de Sprint Planning permitieron debatir soluciones de diseño, estimaciones y decisiones de arquitectura con objetividad, rigor y claridad, logrando una visión compartida de los objetivos que impulsó el trabajo colaborativo. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Arroyo Gonzales, Emily Juliette**<br>**TB1:** Redactó con enfoque centrado en el usuario las hipótesis del Lean UX, las fichas descriptivas de los User Personas y el mapa de empatía en UXpressia, asegurando un contenido visual y comprensible.<br><br>**Atoche Gonzales, Nicolas Fernando**<br>**TB1:** Redactó formalmente la matriz SWOT competitiva, la estructura del Impact Mapping y las tablas del Product Backlog y Sprint Backlog en formato Markdown para el repositorio.<br><br>**Estupiñan Olortegui, Juan Sebastian**<br>**TB1:** Elaboró la documentación técnica de la arquitectura Domain-Driven Design (Bounded Contexts), la guía de configuración del entorno de desarrollo y la consolidación de evidencias del Sprint en GitHub.<br><br>**Razuri Ucañan, Piero Alejandro**<br>**TB1:** Redactó los antecedentes y problemática del proyecto utilizando el esquema 5W2H, el perfil de la startup y la documentación explicativa de los wireframes para la Landing Page.<br><br>**Yauri Barrios, Antony David**<br>**TB1:** Documentó las Historias de Usuario empleando rigurosamente la sintaxis formal Gherkin (Given-When-Then), además de redactar los mensajes de confirmación de código bajo el estándar Conventional Commits. | **TB1**<br>La documentación escrita desarrollada para la entrega TB1 evidenció una alta capacidad de adaptación según el perfil del lector. Se generó documentación técnica de alto nivel (especificaciones de arquitectura DDD, criterios de aceptación formalizados y estándares de configuración SCM) orientada a desarrolladores y evaluadores, manteniendo orden, precisión y estricto apego a las convenciones de Markdown. En paralelo, los textos informativos para la Landing Page y las descripciones funcionales de la Web Application se formularon con un tono claro, directo y empático, facilitando la comprensión de la propuesta de valor tanto para usuarios finales como para colaboradores del proyecto. |
