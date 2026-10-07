@@ -138,8 +138,7 @@ Definen el camino ideal (*Happy Path*) y las rutas alternativas de excepción (*
 ## <a name="web_applications_prototyping"></a>4.5. Web Applications Prototyping
 
 El prototipo interactivo de alta fidelidad fue desarrollado en **Figma**, simulando las transiciones de la Web Application y el flujo de navegación entre la Landing Page y el módulo de registro/pago.
-* **Enlace al video de navegación:** [*Ver en Microsoft Stream*](https://upcedupe-my.sharepoint.com/)  
-* **Archivo de referencia:** `upc-pre-202620-1asi0729-7729-serenia-prototype-navigation-sprint-2.mp4`
+* **Enlace al video de navegación:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223405_upc_edu_pe/IQBaoUh8sEdoTqs4oqR7K4oQAafWpgzV6Qc7MeckEhWoV5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6SSDuy](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223405_upc_edu_pe/IQBaoUh8sEdoTqs4oqR7K4oQAafWpgzV6Qc7MeckEhWoV5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6SSDuy)
 
 ## <a name="domain_driven_software_architecture"></a>4.6. Domain-Driven Software Architecture
 
