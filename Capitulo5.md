@@ -332,81 +332,276 @@ correcciones y documentación desarrolladas durante el Sprint.
 | `PieroR29` | Razuri Ucañán, Piero Alejandro |
 | `KazeKesh` | Yauri Barrios, Antony David |
 
-### <a name="sprint_2"></a>5.2.2. Sprint 2
 
-El Sprint 2 contempló la evolución del Landing Page y el desarrollo de la primera versión funcional de la Web Application, focalizada en el onboarding del cuidador administrador, autenticación, catálogo de planes y confirmación de suscripción.
+### <a name="sprint_1"></a>5.2.1. Sprint 2
 
 
-#### <a name="sprint_2_planning"></a>5.2.2.1. Sprint Planning 2
 
-> **Qué incluir:** Introducción y cuadro resumen del Sprint Planning Meeting. El Sprint Goal se redacta con el template de Scrum.org (Outcome, Impact, Customer(s), Event) y con enfoque en negocio o en los usuarios, no en complacer a alguien del equipo.
+#### <a name="sprint_1_planning"></a>5.2.1.1. Sprint Planning 2
 
-| Sprint # | Sprint 2 |
-| :--- | :--- |
-| **Sprint Planning Background** | |
-| Date | 2026-09-23 |
-| Time | 07:30 PM |
-| Location | Microsoft Teams (Virtual) |
-| Prepared By | Estupiñan Olortegui, Juan Sebastián |
-| Attendees (to planning meeting) | Arroyo Gonzales Emily, Atoche Gonzales Nicolas, Estupiñan Olortegui Juan Sebastián, Razuri Ucañan Piero, Yauri Barrios Antony |
-| Sprint 1 Review Summary | El Landing Page cumplió con los requerimientos estéticos y responsive. Se sugirió optimizar el enrutamiento hacia la aplicación web. |
-| Sprint 1 Retrospective Summary | Acierto en el uso de Angular Material; oportunidad de mejora en la coordinación temprana de servicios RESTful compartidos. |
-| **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Nos centramos en ofrecer servicios de autenticación para cuidadores y en gestionar su incorporación a planes de suscripción. Consideramos que esto facilita a los cuidadores una configuración de cuenta fluida y el acceso a mecanismos de monetización. Esto se verificará cuando un cuidador pueda registrarse, seleccionar un plan de suscripción y completar el proceso de confirmación de pago. |
-| Sprint 2 Velocity | 14 |
-| Sum of Story Points | 12 |
 
+| Sprint #                              | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sprint Planning Background**        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Date                                  | 2026-10-03                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Time                                  | 4:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Location                              | Teams                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Prepared By                           | Estupiñan Olortegui, Juan Sebastián U202223405                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Attendees (to planning meeting)       | Arroyo Gonzales, Emily Juliette U202311469<br/>Atoche Gonzales, Nicolas Fernando U20241d317<br/>Estupiñan Olortegui, Juan Sebastián U202223405<br/>Razuri Ucañan, Piero Alejandro U202213484<br/>Yauri Barrios, Antony David U202214499                                                                                                                                                                                                                                                                                                                   |
+| Previous Sprint Review Summary        | Durante el Sprint 1 se implementaron las funcionalidades correspondientes al registro del cuidador administrador, inicio de sesión y registro del adulto mayor asociado al perfil del cuidador.                                                                                                                                                                                                                                                                                                                                                           |
+| Previous Sprint Retrospective Summary | El equipo logró establecer la base funcional de la Web Application y distribuir las actividades mediante Git y GitHub. Para el siguiente Sprint se continuará con las funcionalidades de monitoreo, seguridad y gestión de la red de cuidado.                                                                                                                                                                                                                                                                                                             |
+| **Sprint Goal & User Stories**        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Sprint 2 Goal                         | Nuestro enfoque es ampliar la plataforma FamiCare mediante la implementación de las funcionalidades de monitoreo y seguridad del adulto mayor. Se busca permitir que los cuidadores administren la red de cuidado, vinculen, gestionen zonas seguras, consulten alertas, visualicen la ubicación y actividad del adulto mayor y gestionen el plan de suscripción. Esto se confirmará cuando los cuidadores puedan utilizar las vistas correspondientes para administrar y monitorear al adulto mayor desde la plataforma. |
+| Sprint 2 Velocity                     | 34                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Sum of Story Points                   | 34                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 #### <a name="sprint_2_leaders"></a>5.2.2.2. Aspect Leaders and Collaborators
 
-| Team Member (Last Name, First Name) | GitHub Username | Authentication Service & Register — Leader (L) / Collaborator (C) | Plan Selection UI — Leader (L) / Collaborator (C) | Payment Workflow (Success/Cancel) — Leader (L) / Collaborator (C) | Routing & Environments — Leader (L) / Collaborator (C) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Arroyo Gonzales, Emily Juliette |[Em2920](https://github.com/Em2920)| C | L | C | C |
-| Atoche Gonzales, Nicolas Fernando |[THECOMAX](https://github.com/THECOMAX)| C | C | L | C |
-| Estupiñan Olortegui, Juan Sebastián |[JuanSEstupinan](https://github.com/JuanSEstupinan)| L | C | C | L |
-| Razuri Ucañan, Piero Alejandro |[PieroR29](https://github.com/PieroR29)| C | C | C | C |
-| Yauri Barrios, Antony David |[KazeKesh](https://github.com/KazeKesh)| L | C | C | C |
-
+| Team Member (Last Name, First Name) | GitHub Username                                     | Care Network — Leader (L) / Collaborator (C) | IoT Device — Leader (L) / Collaborator (C) | Safe Zones & Alerts — Leader (L) / Collaborator (C) | Location & Activity — Leader (L) / Collaborator (C) | Subscription — Leader (L) / Collaborator (C) | Frontend / UI — Leader (L) / Collaborator (C) |
+| :---------------------------------- | :-------------------------------------------------- | :------------------------------------------: | :----------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: | :------------------------------------------: | :-------------------------------------------: |
+| Arroyo Gonzales, Emily Juliette     | [Em2920](https://github.com/Em2920)                 |                       C                      |                      C                     |                          C                          |                          C                          |                       C                      |                       C                       |
+| Atoche Gonzales, Nicolas Fernando   | [THECOMAX](https://github.com/THECOMAX)             |                       L                      |                      L                     |                          L                          |                          L                          |                       L                      |                       L                       |
+| Estupiñan Olortegui, Juan Sebastián | [JuanSEstupinan](https://github.com/JuanSEstupinan) |                       C                      |                      C                     |                          C                          |                          C                          |                       C                      |                       C                       |
+| Razuri Ucañan, Piero Alejandro      | [PieroR29](https://github.com/PieroR29)             |                       C                      |                      C                     |                          C                          |                          C                          |                       C                      |                       C                       |
+| Yauri Barrios, Antony David         | [KazeKesh](https://github.com/KazeKesh)             |                       C                      |                      C                     |                          C                          |                          C                          |                       C                      |                       C                       |
 
 #### <a name="sprint_2_backlog"></a>5.2.2.3. Sprint Backlog 2
 
-| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-| :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
-| US-01 | Registro de cuidador administrador | TS2-01 | Create AuthService | Implementar `auth.service.ts` con métodos HTTP para registro y login | 6 | Estupiñan, Juan | Done |
-| US-01 | Registro de cuidador administrador | TS2-02 | Develop Register Component | Crear vista `register` con validaciones de formulario reactivo | 8 | Yauri, Antony | Done |
-| US-24 | Consultar planes y precios | TS2-03 | Develop Plan Selection View | Implementar `plan-selection` con tarjetas comparativas de precios | 6 | Arroyo, Emily | Done |
-| US-19 | Activar suscripción | TS2-04 | Develop Payment Success View | Crear vista `payment-success` con confirmación de activación | 4 | Atoche, Nicolas | Done |
-| US-19 | Activar suscripción | TS2-05 | Develop Payment Cancel View | Crear vista `payment-cancel` con alternativas ante cancelación | 4 | Atoche, Nicolas | Done |
-| US-02 | Inicio de sesión | TS2-06 | Configure Application Routing | Configurar `app.routes.ts` y variables en `environments/` | 4 | Estupiñan, Juan | Done |
-
+| **Story Id** | **Story Title**                        | **Task Id** | **Task Title**                        | **Task Description**                                                                                          | **Estimation (Hours)** | **Assigned To**                        | **Status** |
+| ------------ | -------------------------------------- | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------: | -------------------------------------- | ---------- |
+| **US-04**    | Invitar cuidador a la red de cuidado   | TASK-15     | Diseñar interfaz de invitación        | Crear la interfaz para ingresar el correo electrónico del cuidador que será invitado.                         |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-04**    | Invitar cuidador a la red de cuidado   | TASK-16     | Implementar envío de invitación       | Implementar la lógica para registrar y enviar la invitación al cuidador colaborador.                          |                      3 | **Antony David Yauri Barrios**         | **Done**   |
+| **US-05**    | Aceptar invitación a la red de cuidado | TASK-17     | Diseñar gestión de invitaciones       | Crear la interfaz para visualizar y aceptar invitaciones pendientes.                                          |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-05**    | Aceptar invitación a la red de cuidado | TASK-18     | Implementar aceptación de invitación  | Implementar la lógica para aceptar la invitación y otorgar acceso como colaborador.                           |                      3 | **Juan Sebastián Estupiñan Olortegui** | **Done**   |
+| **US-06**    | Revocar acceso de un colaborador       | TASK-19     | Diseñar lista de colaboradores        | Crear la interfaz para visualizar los cuidadores colaboradores asociados al adulto mayor.                     |                      2 | **Piero Alejandro Razuri Ucañán**      | **Done**   |
+| **US-06**    | Revocar acceso de un colaborador       | TASK-20     | Implementar revocación de acceso      | Implementar la lógica para eliminar el acceso de un cuidador colaborador.                                     |                      2 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-07**    | Vincular dispositivo IoT               | TASK-21     | Diseñar vinculación del dispositivo   | Crear la interfaz para ingresar el código de emparejamiento del dispositivo IoT.                              |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-07**    | Vincular dispositivo IoT               | TASK-22     | Implementar vinculación IoT           | Implementar la lógica para asociar el dispositivo al adulto mayor.                                            |                      3 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-08**    | Visualizar nivel de batería            | TASK-23     | Mostrar estado del dispositivo        | Implementar la visualización del estado y porcentaje de batería del dispositivo IoT.                          |                      2 | **Antony David Yauri Barrios**         | **Done**   |
+| **US-09**    | Alerta de batería baja                 | TASK-24     | Implementar indicador de batería baja | Mostrar una alerta cuando el nivel de batería del dispositivo se encuentre por debajo del umbral establecido. |                      2 | **Piero Alejandro Razuri Ucañán**      | **Done**   |
+| **US-10**    | Definir zona segura                    | TASK-25     | Diseñar gestión de zonas seguras      | Crear la interfaz para registrar una nueva zona segura sobre el mapa.                                         |                      3 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-10**    | Definir zona segura                    | TASK-26     | Implementar creación de zona          | Implementar la lógica para guardar el nombre y área de una zona segura.                                       |                      3 | **Juan Sebastián Estupiñan Olortegui** | **Done**   |
+| **US-11**    | Editar zona segura                     | TASK-27     | Implementar edición de zona           | Permitir modificar el nombre y área de una zona segura existente.                                             |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-12**    | Alerta de salida de zona segura        | TASK-28     | Implementar alerta de salida          | Mostrar una alerta cuando la ubicación del adulto mayor se encuentre fuera de una zona segura.                |                      2 | **Piero Alejandro Razuri Ucañán**      | **Done**   |
+| **US-13**    | Botón de pánico                        | TASK-29     | Diseñar alerta de emergencia          | Crear la interfaz para visualizar y gestionar una alerta de emergencia generada desde el dispositivo.         |                      2 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-13**    | Botón de pánico                        | TASK-30     | Implementar notificación de pánico    | Implementar la generación y visualización de la alerta de emergencia para los cuidadores.                     |                      3 | **Antony David Yauri Barrios**         | **Done**   |
+| **US-14**    | Alerta de inactividad prolongada       | TASK-31     | Implementar detección de inactividad  | Implementar la lógica para detectar periodos prolongados sin movimiento.                                      |                      3 | **Juan Sebastián Estupiñan Olortegui** | **Done**   |
+| **US-14**    | Alerta de inactividad prolongada       | TASK-32     | Mostrar alerta de inactividad         | Mostrar la alerta correspondiente en la sección de alertas de la plataforma.                                  |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-16**    | Ubicación en tiempo real               | TASK-33     | Diseñar mapa de ubicación             | Crear la interfaz del mapa para mostrar la ubicación actual del adulto mayor.                                 |                      3 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-16**    | Ubicación en tiempo real               | TASK-34     | Implementar ubicación actual          | Integrar la información del dispositivo para mostrar las coordenadas actuales del adulto mayor.               |                      3 | **Antony David Yauri Barrios**         | **Done**   |
+| **US-17**    | Historial de ubicación                 | TASK-35     | Diseñar historial de recorridos       | Crear la interfaz para seleccionar un rango de fechas y consultar ubicaciones anteriores.                     |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-17**    | Historial de ubicación                 | TASK-36     | Implementar historial de ubicación    | Mostrar el recorrido registrado del adulto mayor durante el periodo seleccionado.                             |                      3 | **Juan Sebastián Estupiñan Olortegui** | **Done**   |
+| **US-18**    | Reporte de actividad                   | TASK-37     | Diseñar vista de actividad            | Crear la interfaz para consultar la actividad registrada del adulto mayor.                                    |                      2 | **Piero Alejandro Razuri Ucañán**      | **Done**   |
+| **US-18**    | Reporte de actividad                   | TASK-38     | Implementar reporte de actividad      | Implementar la visualización de los datos de actividad y sus patrones registrados.                            |                      3 | **Nicolas Fernando Atoche Gonzales**   | **Done**   |
+| **US-19**    | Activar suscripción                    | TASK-39     | Diseñar sección de planes             | Crear la interfaz para visualizar los planes de suscripción disponibles y sus beneficios.                     |                      2 | **Emily Juliette Arroyo Gonzales**     | **Done**   |
+| **US-19**    | Activar suscripción                    | TASK-40     | Implementar activación de plan        | Implementar el flujo para seleccionar y activar un plan de suscripción.                                       |                      3 | **Antony David Yauri Barrios**         | **Done**   |
+| **US-20**    | Renovar suscripción                    | TASK-41     | Configurar renovación automática      | Implementar la configuración de renovación automática de la suscripción.                                      |                      2 | **Juan Sebastián Estupiñan Olortegui** | **Done**   |
+| **US-21**    | Cancelar suscripción                   | TASK-42     | Implementar cancelación de plan       | Permitir al cuidador administrador cancelar su suscripción y detener la renovación automática.                |                      2 | **Piero Alejandro Razuri Ucañán**      | **Done**   |
 
 #### <a name="sprint_2_dev_evidence"></a>5.2.2.4. Development Evidence for Sprint Review
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :---: | :--- | :--- | :---: |
-| famicare-frontend | feature/auth | `7a12b90` | `feat(auth): implement auth.service.ts with registration flow` | Añade servicio de autenticación y manejo de sesión | 2026-09-25 |
-| famicare-frontend | feature/register | `8c34d11` | `feat(app): create register form component` | Maqueta formulario reactivo de registro de cuidador administrador | 2026-09-28 |
-| famicare-frontend | feature/plans | `9d56e22` | `feat(subs): implement plan-selection component with pricing tiers` | Muestra planes básico y avanzado con Material Cards | 2026-10-01 |
-| famicare-frontend | feature/payment | `1e78f33` | `feat(subs): add payment-success and payment-cancel views` | Completa el ciclo de respuesta de la pasarela de pago | 2026-10-03 |
-| famicare-frontend | develop | `2f90a44` | `refactor(routes): organize routing and environment configurations` | Centraliza enrutamiento de la Web App en `app.routes.ts` | 2026-10-05 |
+| **Repository**    | **Branch**             | **Commit Id** | **Commit Message**                                              | **Commit Message Body**                                                                                | **Commited on (Date)** |
+| ----------------- | ---------------------- | ------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------- |
+| famicare-frontend | `feature/care-network` | `3a47c81`     | `feat(care-network): implement caregiver invitation management` | Implementa la invitación, aceptación y revocación de cuidadores colaboradores                          | 2026-09-26             |
+| famicare-frontend | `feature/device`       | `5b82d14`     | `feat(device): implement IoT device management`                 | Añade vinculación del dispositivo y visualización del estado y nivel de batería                        | 2026-09-28             |
+| famicare-frontend | `feature/safe-zones`   | `6c91e35`     | `feat(safe-zones): implement safe zone management`              | Permite crear, editar y gestionar zonas seguras asociadas al adulto mayor                              | 2026-09-30             |
+| famicare-frontend | `feature/alerts`       | `8d24f67`     | `feat(alerts): implement risk alert management`                 | Implementa alertas de batería baja, salida de zona segura, pánico e inactividad                        | 2026-10-01             |
+| famicare-frontend | `feature/location`     | `9e53a28`     | `feat(location): implement real-time location and history`      | Añade visualización de ubicación actual e historial de desplazamientos                                 | 2026-10-02             |
+| famicare-frontend | `feature/activity`     | `1f76b42`     | `feat(activity): implement elderly activity monitoring`         | Implementa la vista de actividad y consulta de patrones registrados                                    | 2026-10-03             |
+| famicare-frontend | `feature/subscription` | `2a85c19`     | `feat(subscription): implement subscription management`         | Añade selección, activación, renovación y cancelación del plan                                         | 2026-10-04             |
+| famicare-frontend | `develop`              | `4c97e51`     | `refactor(routes): integrate sprint 2 application routes`       | Integra las rutas de dashboard, location, safe-zones, alerts, care-network, activity, device y profile | 2026-10-05             |
+
+
+Durante el Sprint 2 se desarrollaron las funcionalidades relacionadas con el monitoreo, seguridad y administración de la plataforma FamiCare. El desarrollo se centró en ampliar las funcionalidades implementadas durante el Sprint 1 y proporcionar nuevas vistas para que los cuidadores puedan supervisar al adulto mayor.
+
+Entre las principales funcionalidades implementadas se encuentran la gestión de la red de cuidado, vinculación y monitoreo del dispositivo IoT, gestión de zonas seguras, consulta de alertas, ubicación en tiempo real, historial de ubicación, actividad y gestión de suscripciones.
 
 #### <a name="sprint_2_exec_evidence"></a>5.2.2.5. Execution Evidence for Sprint Review
 
-Se logró la integración completa del embudo de conversión y acceso: el usuario puede seleccionar un plan desde el Landing Page, ser dirigido al registro de cuenta (`register`), simular el proceso de pago y recibir confirmación en pantalla (`payment-success`).
+Durante el Sprint 2 se implementaron nuevas vistas que permiten al cuidador administrar y monitorear diferentes aspectos relacionados con el adulto mayor.
 
+Las principales rutas implementadas y utilizadas para validar las funcionalidades fueron:
+
+### Dashboard
+
+La vista principal permite al cuidador acceder de manera centralizada a la información relevante del adulto mayor, incluyendo información relacionada con el dispositivo, ubicación y alertas.
+
+`http://localhost:4200/dashboard`
+![Captura de pantalla (123).png](assets/readme/sprint/Captura%20de%20pantalla%20%28123%29.png)
+### Location
+
+La vista permite visualizar la ubicación del adulto mayor mediante un mapa y consultar información relacionada con su localización.
+
+`http://localhost:4200/location`
+![Captura de pantalla (124).png](assets/readme/sprint/Captura%20de%20pantalla%20%28124%29.png)
+### Safe Zones
+
+La vista permite gestionar las zonas seguras asociadas al adulto mayor, incluyendo la creación y edición de las áreas configuradas.
+
+`http://localhost:4200/safe-zones`
+![Captura de pantalla (125).png](assets/readme/sprint/Captura%20de%20pantalla%20%28125%29.png)
+### Alerts
+
+La vista permite consultar las alertas generadas por diferentes situaciones de riesgo, como batería baja, salida de una zona segura, emergencia o inactividad prolongada.
+
+`http://localhost:4200/alerts`
+![Captura de pantalla (126).png](assets/readme/sprint/Captura%20de%20pantalla%20%28126%29.png)
+### Care Network
+
+La vista permite administrar la red de cuidado del adulto mayor, incluyendo la gestión de cuidadores colaboradores.
+
+`http://localhost:4200/care-network`
+![Captura de pantalla (127).png](assets/readme/sprint/Captura%20de%20pantalla%20%28127%29.png)
+### Activity
+
+La vista permite consultar información relacionada con la actividad registrada del adulto mayor y sus patrones de comportamiento.
+
+`http://localhost:4200/activity`
+![Captura de pantalla (128).png](assets/readme/sprint/Captura%20de%20pantalla%20%28128%29.png)
+### Device
+
+La vista permite gestionar el dispositivo IoT asociado al adulto mayor y consultar información como su estado y nivel de batería.
+
+`http://localhost:4200/device`
+![Captura de pantalla (129).png](assets/readme/sprint/Captura%20de%20pantalla%20%28129%29.png)
+### Profile
+
+La vista permite consultar y administrar la información del perfil del cuidador y del adulto mayor asociado.
+
+`http://localhost:4200/profile`
+![Captura de pantalla (130).png](assets/readme/sprint/Captura%20de%20pantalla%20%28130%29.png)
+### Subscription Plan
+
+La sección de planes permite consultar y gestionar la suscripción del cuidador administrador.
+`http://localhost:4200/profile#plan`
+![Captura de pantalla (130).png](assets/readme/sprint/Captura%20de%20pantalla%20%28130%29.png)
+
+### Video de demostración
+
+El siguiente video presenta la ejecución y navegación de las funcionalidades desarrolladas durante el Sprint 2:
+
+[upc-pre-202620-1asi0729-7729-serenia-product-navigation-sprint-2.mp4](assets/readme/sprint/upc-pre-202620-1asi0729-7729-serenia-product-navigation-sprint-2.mp4)
 
 #### <a name="sprint_2_services_docs"></a>5.2.2.6. Services Documentation Evidence for Sprint Review
 
-| Endpoint | Acción (verbo HTTP) | Sintaxis de llamada | Parámetros | Ejemplo y explicación del response | Enlace a la documentación (OpenAPI / Swagger) |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| `/api/v1/auth/register` | POST | `/api/v1/auth/register` | Body: `{ email, password, fullName, phone }` | `201 Created`: `{ "token": "jwt_token_sample", "caregiverId": "c-101" }` | `http://localhost:8080/swagger-ui/index.html` |
-| `/api/v1/subscriptions/checkout` | POST | `/api/v1/subscriptions/checkout` | Body: `{ caregiverId, planId }` | `200 OK`: `{ "sessionUrl": "https://checkout.stripe.com/..." }` | `http://localhost:8080/swagger-ui/index.html` |
+Durante el Sprint 2 se implementaron y utilizaron los servicios necesarios para soportar las funcionalidades de monitoreo y gestión desarrolladas en la Web Application.
 
+Estos servicios permiten gestionar la red de cuidado, consultar información del dispositivo IoT, administrar zonas seguras, consultar la ubicación del adulto mayor, gestionar alertas y administrar la suscripción.
+
+### Endpoints documentados
+
+| Endpoint               | Método HTTP | Acción                   | Descripción                                                         |
+| ---------------------- | ----------- | ------------------------ | ------------------------------------------------------------------- |
+| `/care-network`        | GET         | Consultar red de cuidado | Obtiene los cuidadores asociados al adulto mayor.                   |
+| `/care-network/invite` | POST        | Invitar cuidador         | Registra una invitación para un nuevo cuidador colaborador.         |
+| `/care-network/{id}`   | DELETE      | Revocar acceso           | Elimina el acceso de un cuidador colaborador.                       |
+| `/device`              | GET         | Consultar dispositivo    | Obtiene información del dispositivo IoT asociado.                   |
+| `/device/pair`         | POST        | Vincular dispositivo     | Vincula un dispositivo IoT mediante su código de emparejamiento.    |
+| `/location`            | GET         | Consultar ubicación      | Obtiene la ubicación actual del adulto mayor.                       |
+| `/location/history`    | GET         | Consultar historial      | Obtiene el historial de ubicaciones durante un periodo determinado. |
+| `/safe-zones`          | GET         | Consultar zonas seguras  | Obtiene las zonas seguras registradas.                              |
+| `/safe-zones`          | POST        | Crear zona segura        | Registra una nueva zona segura.                                     |
+| `/safe-zones/{id}`     | PUT         | Editar zona segura       | Actualiza una zona segura existente.                                |
+| `/alerts`              | GET         | Consultar alertas        | Obtiene las alertas generadas para el adulto mayor.                 |
+| `/activity`            | GET         | Consultar actividad      | Obtiene información de actividad registrada.                        |
+| `/subscription`        | GET         | Consultar suscripción    | Obtiene el estado del plan actual.                                  |
+| `/subscription`        | POST        | Activar suscripción      | Activa un plan de suscripción.                                      |
+| `/subscription`        | PUT         | Gestionar suscripción    | Actualiza la configuración de la suscripción.                       |
+
+### GET `/location`
+
+**URL local:**
+
+`http://localhost:4200/location`
+
+**Método HTTP:** `GET`
+
+**Descripción:**
+
+Permite consultar y visualizar la ubicación actual registrada del adulto mayor.
+
+### GET `/safe-zones`
+
+**URL local:**
+
+`http://localhost:4200/safe-zones`
+
+**Método HTTP:** `GET`
+
+**Descripción:**
+
+Permite obtener las zonas seguras asociadas al adulto mayor para visualizarlas y gestionarlas desde la plataforma.
+
+### GET `/alerts`
+
+**URL local:**
+
+`http://localhost:4200/alerts`
+
+**Método HTTP:** `GET`
+
+**Descripción:**
+
+Permite consultar las alertas generadas por el sistema para informar al cuidador sobre posibles situaciones de riesgo.
 
 #### <a name="sprint_2_deployment_evidence"></a>5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Se desplegó una nueva versión (v1.1.0) en Vercel que incluye tanto la Landing Page actualizada como las nuevas rutas de la Web Application (`/register`, `/plans`, `/payment/success`, `/payment/cancel`). Se validaron variables de entorno dinámicas en `environment.development.ts` y `environment.ts` para conectar con el backend de pruebas.
+Durante el Sprint 2 se realizó el despliegue de la Landing Page de FamiCare en GitHub Pages, permitiendo disponer de una versión pública de la página de presentación del producto.
+
+Por otro lado, las funcionalidades correspondientes a la aplicación principal, desarrolladas para el monitoreo y gestión del adulto mayor, fueron ejecutadas y validadas en un entorno local de desarrollo. Estas funcionalidades incluyen la red de cuidado, gestión del dispositivo IoT, zonas seguras, alertas, ubicación, actividad y gestión de suscripción.
+
+**Landing Page desplegada**
+
+La Landing Page fue publicada mediante GitHub Pages, permitiendo acceder públicamente a la página de presentación de FamiCare.
+
+URL de la Landing Page:
+
+https://upc-pre-202620-1asi0729-7729-serenia.github.io/Famicare-Landing-Page/
+
+La versión desplegada permite visualizar la información general del producto y las secciones correspondientes a la Landing Page.
+
+**Aplicación principal en entorno local**
+
+Las funcionalidades de la aplicación principal fueron desarrolladas y validadas en el entorno local de desarrollo. Las principales rutas utilizadas durante las pruebas fueron:
+
+| Componente | URL local | Estado |
+|---|---|---|
+| Web Application - Dashboard | [http://localhost:4200/dashboard](http://localhost:4200/dashboard) | Implementado y probado localmente |
+| Web Application - Location | [http://localhost:4200/location](http://localhost:4200/location) | Implementado y probado localmente |
+| Web Application - Safe Zones | [http://localhost:4200/safe-zones](http://localhost:4200/safe-zones) | Implementado y probado localmente |
+| Web Application - Alerts | [http://localhost:4200/alerts](http://localhost:4200/alerts) | Implementado y probado localmente |
+| Web Application - Care Network | [http://localhost:4200/care-network](http://localhost:4200/care-network) | Implementado y probado localmente |
+| Web Application - Activity | [http://localhost:4200/activity](http://localhost:4200/activity) | Implementado y probado localmente |
+| Web Application - Device | [http://localhost:4200/device](http://localhost:4200/device) | Implementado y probado localmente |
+| Web Application - Profile | [http://localhost:4200/profile](http://localhost:4200/profile) | Implementado y probado localmente |
+| Web Application - Subscription | [http://localhost:4200/profile#plan](http://localhost:4200/profile#plan) | Implementado y probado localmente |
 
 #### <a name="sprint_2_collab_insights"></a>5.2.2.8. Team Collaboration Insights during Sprint
 
-Se observó una mayor sinergia entre los integrantes gracias a la delimitación de tareas en el Sprint Backlog. El desarrollo paralelo de vistas de suscripción y formularios reactivos de registro permitió cumplir el 100% de los Story Points comprometidos sin incurrir en cuellos de botella.
+Durante el Sprint 2, el equipo trabajó colaborativamente en la implementación de las funcionalidades relacionadas con el monitoreo y seguridad del adulto mayor. Las actividades fueron distribuidas entre los integrantes considerando las tareas definidas en el Sprint Backlog.
+
+### Actividades realizadas por los integrantes
+
+| Alumno                              | Actividad                                                                                                                                         |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Arroyo Gonzales, Emily Juliette     | Diseño e implementación de interfaces relacionadas con la red de cuidado, zonas seguras, actividad y suscripción.                                 |
+| Atoche Gonzales, Nicolas Fernando   | Implementación de funcionalidades relacionadas con el dispositivo IoT, zonas seguras, ubicación y actividad del adulto mayor.                     |
+| Estupiñan Olortegui, Juan Sebastián | Implementación de funcionalidades relacionadas con la gestión de invitaciones, zonas seguras, historial de ubicación y renovación de suscripción. |
+| Razuri Ucañán, Piero Alejandro      | Desarrollo de funcionalidades relacionadas con colaboradores, alertas, batería, botón de pánico y cancelación de suscripción.                     |
+| Yauri Barrios, Antony David         | Implementación de servicios y funcionalidades relacionadas con la vinculación del dispositivo, ubicación, alertas y activación de suscripción.    |
+
+### Colaboración mediante Git
+
+El desarrollo del Sprint 2 se realizó utilizando Git y GitHub como herramientas de control de versiones y colaboración. Los integrantes trabajaron sobre el repositorio del proyecto, realizando commits asociados a las nuevas funcionalidades, correcciones y documentación desarrolladas durante el Sprint.
+
+La utilización del control de versiones permitió mantener los cambios organizados y facilitar la integración de las funcionalidades desarrolladas por los diferentes integrantes del equipo.
+
+### Identificación de integrantes
+
+| Username (GitHub) | Nombre                              |
+| ----------------- | ----------------------------------- |
+| `Em2920`          | Arroyo Gonzales, Emily Juliette     |
+| `THECOMAX`        | Atoche Gonzales, Nicolas Fernando   |
+| `JuanSEstupinan`  | Estupiñan Olortegui, Juan Sebastián |
+| `PieroR29`        | Razuri Ucañán, Piero Alejandro      |
+| `KazeKesh`        | Yauri Barrios, Antony David         |
