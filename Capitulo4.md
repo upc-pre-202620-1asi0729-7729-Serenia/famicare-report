@@ -129,6 +129,8 @@ Diagraman el recorrido de pantallas con estados condicionales para las metas cr�
 ### <a name="web_applications_mockups"></a>4.4.3. Web Applications Mock-ups
 Mock-ups de alta fidelidad que ilustran el estado interactivo del dashboard: pines de geolocalización en tiempo real, delimitadores circulares/poligonales de geofencing en color verde, y banners emergentes de alerta crítica en rojo oscuro con botón de acción inmediata.
 
+![web-app-mockup.png](./assets/readme/web-app-mockup.png)
+
 ### <a name="web_applications_user_flows"></a>4.4.4. Web Applications User Flow Diagrams
 Definen el camino ideal (*Happy Path*) y las rutas alternativas de excepción (*Unhappy Paths*):
 * *Flujo de Registro y Suscripción:* Registro exitoso vs. correo duplicado o tarjeta rechazada en la pasarela.
@@ -138,6 +140,7 @@ Definen el camino ideal (*Happy Path*) y las rutas alternativas de excepción (*
 ## <a name="web_applications_prototyping"></a>4.5. Web Applications Prototyping
 
 El prototipo interactivo de alta fidelidad fue desarrollado en **Figma**, simulando las transiciones de la Web Application y el flujo de navegación entre la Landing Page y el módulo de registro/pago.
+![Prototype_12342.png](./assets/readme/Prototype_12342.png)
 * **Enlace al video de navegación:** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223405_upc_edu_pe/IQBaoUh8sEdoTqs4oqR7K4oQAafWpgzV6Qc7MeckEhWoV5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6SSDuy](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223405_upc_edu_pe/IQBaoUh8sEdoTqs4oqR7K4oQAafWpgzV6Qc7MeckEhWoV5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6SSDuy)
 
 ## <a name="domain_driven_software_architecture"></a>4.6. Domain-Driven Software Architecture
