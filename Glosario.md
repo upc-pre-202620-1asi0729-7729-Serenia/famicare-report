@@ -72,3 +72,9 @@ Modalidad de servicio contratada por un cuidador administrador que determina el 
 
 **23. Payment Method (Método de pago):**  
 Medio de pago tokenizado asociado a la cuenta de un cuidador administrador para gestionar la facturación mensual de su suscripción.
+
+**24. Caregiver Invitation (Invitación de cuidador):**  
+Solicitud enviada por un cuidador administrador mediante email para incorporar a un familiar o profesional a la red de un adulto mayor.
+
+**25. Access Revocation (Revocación de acceso):**  
+Acción mediante la cual un cuidador administrador retira los permisos de gestión de un cuidador colaborador dentro de la red.
