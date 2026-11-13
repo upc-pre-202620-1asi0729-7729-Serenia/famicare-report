@@ -60,3 +60,15 @@ Plan de pago periódico que habilita el acceso a las funcionalidades de la plata
 
 **19. Wandering Risk (Riesgo de deambulación):**  
 Condición asociada a ciertos adultos mayores (por ejemplo, con deterioro cognitivo) que incrementa la probabilidad de desorientación o extravío fuera de casa.
+
+**20. Pairing Code (Código de emparejamiento):**  
+Código único del dispositivo IoT que permite registrarlo en el sistema y vincularlo de forma segura al perfil de un adulto mayor.
+
+**21. Device Telemetry (Telemetría del dispositivo):**  
+Conjunto de lecturas por evento enviadas por el dispositivo IoT hacia la plataforma, incluyendo coordenadas GPS, nivel de batería, señal de conexión, detección de caídas o activación del botón SOS.
+
+**22. Subscription Plan (Plan de suscripción):**  
+Modalidad de servicio contratada por un cuidador administrador que determina el alcance de monitoreo y la cantidad de cuidadores colaboradores permitidos.
+
+**23. Payment Method (Método de pago):**  
+Medio de pago tokenizado asociado a la cuenta de un cuidador administrador para gestionar la facturación mensual de su suscripción.
