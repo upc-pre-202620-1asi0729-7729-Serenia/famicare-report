@@ -11,7 +11,9 @@
 | Project Management |GitHub|Organización y seguimiento de las actividades del proyecto.|[GitHub](https://github.com/)|
 | Requirements Management |GitHub|Registro y seguimiento de los requerimientos del proyecto.|[GitHub](https://github.com/)|
 | Product UX/UI Design |Figma, Miro, UXPressia|Diseño de interfaces y elaboración de herramientas de UX, como mapas de empatía, customer journey y otros artefactos de experiencia de usuario.|[Figma](https://www.figma.com/) / [Miro](https://miro.com/) / [UXPresia](https://uxpressia.com/)|
-| Software Development |WebStorm, Angular, TypeScript|Desarrollo de la aplicación web y edición del código fuente.|[WebStorm](https://www.jetbrains.com/webstorm/) / [Angular](https://angular.dev/) / [Typescript](https://www.typescriptlang.org/)|
+| Software Development | WebStorm, IntelliJ IDEA, Angular, TypeScript, Java, Spring Boot | Desarrollo de la aplicación web frontend y de los servicios RESTful backend con arquitectura DDD. | [WebStorm](https://www.jetbrains.com/webstorm/) / [IntelliJ IDEA](https://www.jetbrains.com/idea/) / [Spring Boot](https://spring.io/projects/spring-boot) |
+| Database & Cloud Hosting | PostgreSQL, Render, GitHub Pages | Alojamiento de base de datos relacional administrada en la nube (Render) y despliegue web estático (GitHub Pages). | [Render](https://render.com/) / [PostgreSQL](https://www.postgresql.org/) / [GitHub Pages](https://pages.github.com/) |
+| API Documentation & Testing | Swagger UI / OpenAPI 3 | Documentación interactiva y validación de endpoints RESTful. | [OpenAPI / Swagger](https://swagger.io/) |
 | Software Deployment |GitHub Pages|Despliegue y publicación de la aplicación web.|[GitHub Pages](https://pages.github.com/)|
 | Software Documentation |GitHub, Markdown|Elaboración, organización y almacenamiento de la documentación técnica del proyecto.|[GitHub Markdown](https://github.com/)|
 
@@ -26,7 +28,7 @@ Los repositorios asociados a los productos desarrollados son los siguientes:
 | **Producto** | **URL del repositorio en GitHub** |
 |---|---|
 | Landing Page | [Famicare-Landing-Page](https://github.com/upc-pre-202620-1asi0729-7729-Serenia/Famicare-Landing-Page) |
-| Web Services (incluye pruebas unitarias y de integración/aceptación) | No implementado actualmente |
+| Web Services (RESTful API — DDD) | [Famicare-Backend](https://github.com/upc-pre-202620-1asi0729-7729-Serenia/Famicare-Backend) |
 | Frontend Web Applications | [Famicare-Frontend](https://github.com/upc-pre-202620-1asi0729-7729-Serenia/Famicare-Frontend) |
 
 ### GitFlow
@@ -605,3 +607,182 @@ La utilización del control de versiones permitió mantener los cambios organiza
 | `JuanSEstupinan`  | Estupiñan Olortegui, Juan Sebastián |
 | `PieroR29`        | Razuri Ucañán, Piero Alejandro      |
 | `KazeKesh`        | Yauri Barrios, Antony David         |
+
+### <a name="sprint_3"></a>5.2.3. Sprint 3
+
+#### <a name="sprint_3_planning"></a>5.2.3.1. Sprint Planning 3.
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-10-31 |
+| Time | 4:00 PM |
+| Location | Teams |
+| Prepared By | Estupiñan Olortegui, Juan Sebastián U202223405 |
+| Attendees (to planning meeting) | Arroyo Gonzales, Emily Juliette U202311469<br/>Atoche Gonzales, Nicolas Fernando U20241d317<br/>Estupiñan Olortegui, Juan Sebastián U202223405<br/>Razuri Ucañan, Piero Alejandro U202211245<br/>Yauri Barrios, Antony David U202214499 |
+| Previous Sprint Review Summary | Durante el Sprint 2 se completaron las vistas de monitoreo, zonas seguras, alertas, red de cuidado, dispositivos y suscripciones en la Web Application (`Famicare-Frontend`) operando sobre almacenamiento local (`LocalDbService`), además del despliegue de la Landing Page en GitHub Pages. |
+| Previous Sprint Retrospective Summary | El equipo validó el flujo visual completo de la Web Application, identificando como prioridad crítica para el Sprint 3 la construcción de los servicios RESTful backend con arquitectura Domain-Driven Design (DDD), la persistencia en una base de datos PostgreSQL en la nube (Render) y la conexión real entre Angular y Spring Boot. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Implementar el backend RESTful de FamiCare bajo arquitectura Domain-Driven Design (DDD) en Spring Boot con persistencia en PostgreSQL (Render) para los bounded contexts de IoT, Monitor, Zones y Subscriptions (dejando Care en desarrollo para la siguiente iteración), e integrar la Web Application en Angular con los endpoints reales del servidor. |
+| Sprint 3 Velocity | 31 |
+| Sum of Story Points | 31 |
+
+
+#### <a name="sprint_3_leaders"></a>5.2.3.2. Aspect Leaders and Collaborators.
+
+| Team Member (Last Name, First Name) | GitHub Username | IoT Context — Leader (L) / Collaborator (C) | Monitor Context — Leader (L) / Collaborator (C) | Zones Context — Leader (L) / Collaborator (C) | Subscriptions Context — Leader (L) / Collaborator (C) | Care Context (En progreso) — Leader (L) / Collaborator (C) | Frontend API Integration — Leader (L) / Collaborator (C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Arroyo Gonzales, Emily Juliette | [Em2920](https://github.com/Em2920) | C | C | C | L | C | C |
+| Atoche Gonzales, Nicolas Fernando | [THECOMAX](https://github.com/THECOMAX) | L | C | C | C | C | C |
+| Estupiñan Olortegui, Juan Sebastián | [JuanSEstupinan](https://github.com/JuanSEstupinan) | C | L | C | C | C | L |
+| Razuri Ucañan, Piero Alejandro | [PieroR29](https://github.com/PieroR29) | C | C | C | C | L | C |
+| Yauri Barrios, Antony David | [KazeKesh](https://github.com/KazeKesh) | C | C | L | C | C | C |
+
+
+#### <a name="sprint_3_backlog"></a>5.2.3.3. Sprint Backlog 3.
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US-07 / US-08** | Gestión y vinculación de dispositivo IoT | TASK-43 | Implementar Bounded Context `iot` | Desarrollar agregados `Device` y `TelemetryEvent`, comandos de registro/vinculación, repositorios JPA y controladores REST (`/api/v1/devices`). | 5 | **Nicolas Fernando Atoche Gonzales** | **Done** |
+| **US-07 / US-08** | Gestión y vinculación de dispositivo IoT | TASK-44 | Integrar servicio IoT en Angular | Crear `DevicesService` y conectar `DevicesViewComponent` y `LinkDeviceModalComponent` con los endpoints reales de dispositivos. | 3 | **Nicolas Fernando Atoche Gonzales** | **Done** |
+| **US-10 / US-11** | Definición y edición de zonas seguras | TASK-45 | Implementar Bounded Context `zones` | Desarrollar agregado `SafeZone`, evaluación continua de geocercas (`ZoneEvaluationCommandService`) y controlador `/api/v1/safe-zones`. | 5 | **Antony David Yauri Barrios** | **Done** |
+| **US-12** | Alerta de salida de zona segura | TASK-46 | Integrar eventos entre `iot`, `zones` y `monitor` | Implementar `TelemetryReceivedEventHandler` en `zones` y `SafeZoneExitedEventHandler` en `monitor` para disparar alertas automáticas al salir de una geocerca. | 4 | **Antony David Yauri Barrios** | **Done** |
+| **US-15 / US-16 / US-17** | Monitoreo, alertas y tracking | TASK-47 | Implementar Bounded Context `monitor` | Desarrollar agregados `Alert` y `LocationRecord`, endpoints `/api/v1/alerts` (atender/resolver) y `/api/v1/monitor/tracking`, y configurar PostgreSQL en Render. | 6 | **Juan Sebastián Estupiñan Olortegui** | **Done** |
+| **US-15 / US-16** | Monitoreo, alertas y tracking | TASK-48 | Conectar Stores de Angular con API REST | Migrar `AlertsStore` y `MonitoringStore` de `LocalDbService` hacia `HttpClient` consumiendo los endpoints de alertas, tracking y zonas seguras. | 4 | **Juan Sebastián Estupiñan Olortegui** | **Done** |
+| **US-19 / US-20 / US-21** | Gestión de suscripciones y facturación | TASK-49 | Implementar Bounded Context `subscription` | Desarrollar agregado `Subscription`, planes (`FREE`, `FAMILIAR_PLUS`, `FAMILIAR_PREMIUM`), métodos de pago tokenizados, cancelación y servicio de expiración (`/api/v1/subscriptions`). | 5 | **Emily Juliette Arroyo Gonzales** | **Done** |
+| **US-19 / US-21** | Gestión de suscripciones y facturación | TASK-50 | Integrar suscripciones en Frontend | Crear `SubscriptionsService` y conectar `AccountViewComponent` y `SubscriptionModalComponent` con la API de suscripciones. | 3 | **Emily Juliette Arroyo Gonzales** | **Done** |
+| **US-01 / US-04 / US-05** | Gestión de cuentas y red de cuidado | TASK-51 | Implementar Bounded Context `care` | Modelar agregados de cuidadores, perfiles de adulto mayor e invitaciones de red de cuidado en el backend (pendiente de finalización). | 5 | **Piero Alejandro Razuri Ucañan** | **InProcess** |
+
+
+#### <a name="sprint_3_dev_evidence"></a>5.2.3.4. Development Evidence for Sprint Review.
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Commited on (Date)** |
+| :--- | :--- | :---: | :--- | :--- | :---: |
+| `Famicare-Backend` | `develop` | `a14c902` | `feat(subscription): implement subscription domain, payment methods and rest api` | Implementa planes, tokenización de tarjeta, cambio de plan, cancelación y expiración automática | 2026-11-08 |
+| `Famicare-Backend` | `develop` | `b28e415` | `feat(iot): implement device registration, pairing and telemetry ingestion` | Añade ciclo de vida de dispositivos (`PENDING`/`PAIRED`) y recepción de telemetría GPS/batería | 2026-11-09 |
+| `Famicare-Backend` | `develop` | `c39f721` | `feat(zones): implement circular safe zones and continuous geofence evaluation` | Añade CRUD de geocercas y evaluación reactiva ante eventos de telemetría | 2026-11-10 |
+| `Famicare-Backend` | `develop` | `d41a830` | `feat(monitor): implement alerts lifecycle, tracking endpoints and event handlers` | Implementa `/api/v1/alerts`, `/api/v1/monitor/tracking` y generación automática ante `SafeZoneExitedEvent` | 2026-11-12 |
+| `Famicare-Backend` | `develop` | `e52b944` | `chore(db): configure postgresql driver and render datasource properties` | Configura PostgreSQL en Render con SSL y compatibilidad DDL de entidades | 2026-11-13 |
+| `Famicare-Frontend` | `develop` | `f63c108` | `chore(config): add environment files and register http client provider` | Configura `environment.ts` apuntando a `/api/v1` y habilita `provideHttpClient()` | 2026-11-13 |
+| `Famicare-Frontend` | `develop` | `g74d219` | `feat(monitoring): connect alerts, safe zones and tracking stores to backend api` | Conecta `AlertsStore` y `MonitoringStore` con el backend en Spring Boot | 2026-11-13 |
+| `Famicare-Frontend` | `develop` | `h85e320` | `feat(devices): integrate device registration and pairing with iot endpoints` | Conecta `DevicesService` y modales de vinculación con `/api/v1/devices` | 2026-11-13 |
+| `Famicare-Frontend` | `develop` | `i96f431` | `feat(account): connect subscription lifecycle and payment method updates to api` | Conecta `SubscriptionsService` con `/api/v1/subscriptions` en `AccountViewComponent` | 2026-11-13 |
+
+Durante el Sprint 3 se estructuró el backend `Famicare-Backend` en Spring Boot aplicando Domain-Driven Design con cuatro Bounded Contexts operativos (`iot`, `zones`, `monitor` y `subscription`) conectados mediante eventos de dominio en memoria (`TelemetryReceivedEvent` y `SafeZoneExitedEvent`), mientras que el contexto `care` quedó iniciado y programado para completarse en la siguiente iteración. Asimismo, se reemplazó el almacenamiento simulado en `Famicare-Frontend` por llamadas HTTP reales hacia el servidor.
+
+
+#### <a name="sprint_3_exec_evidence"></a>5.2.3.5. Execution Evidence for Sprint Review.
+
+Durante la revisión del Sprint 3 se validó la ejecución integrada **Frontend (Angular) → Backend (Spring Boot) → Base de Datos Cloud (PostgreSQL en Render)** mediante pruebas de extremo a extremo:
+
+1. **Gestión de Suscripciones y Métodos de Pago (`Subscriptions`):** Creación de suscripción `FAMILIAR_PREMIUM` en moneda `PEN`, actualización de método de pago tokenizado, cambio de plan y programación de cancelación al cierre del periodo desde la vista **Cuenta y suscripción**.
+2. **Registro y Vinculación de Dispositivo IoT (`IoT`):** Alta de dispositivo con código `FAMI-7K2P-9XQ4` en estado `PENDING` y vinculación al perfil del adulto mayor (`elderlyProfileId = 1`), actualizando su estado a `CONECTADA` en la vista **Dispositivos**.
+3. **Flujo Reactivo End-to-End de Geocercas y Alertas (`IoT → Zones → Monitor`):**
+   * Creación de la zona segura `"Casa"` con centro `(-12.046374, -77.042793)` y radio de `150 m`.
+   * Envío de telemetría `LOCATION` dentro del radio (estado `INSIDE`) seguido de una lectura fuera del perímetro (`-12.052500, -77.042793`), disparando automáticamente `SafeZoneExitedEvent` y generando una alerta `WARNING` (`ZONE_EXIT`: *"Salida de zona segura"*) visible en el panel de **Alertas** y persistida en PostgreSQL.
+4. **Verificación de Tráfico HTTP en Navegador:** Validación mediante las herramientas de desarrollo (`Network → Fetch/XHR`) confirmando respuestas `200 OK` y `201 Created` desde `http://localhost:8080/api/v1/...`.
+
+### Capturas de evidencia de ejecución (Swagger UI, Frontend conectado y PostgreSQL en Render)
+
+* **Ejecución de endpoints y flujo reactivo en Swagger UI (`http://localhost:8080/swagger-ui/index.html`):**
+  ![Swagger_S3](assets/readme/sprint/swagger-sprint3.png)
+
+* **Web Application conectada al Backend y verificación de peticiones `Fetch/XHR` (`http://localhost:4200`):**
+  ![Frontend_S3](assets/readme/sprint/frontend-network-sprint3.png)
+
+* **Persistencia de tablas y registros en PostgreSQL (Render):**
+  ![Postgre](assets/readme/sprint/render-postgres-dashboard.png)
+  ![Postgre](assets/readme/sprint/render-postgres-tables.png)
+
+
+#### <a name="sprint_3_services_docs"></a>5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+La API RESTful de FamiCare se encuentra documentada mediante **Springdoc OpenAPI / Swagger UI** (`http://localhost:8080/swagger-ui/index.html`), exponiendo contratos JSON versionados bajo el prefijo `/api/v1`:
+
+### Bounded Context: IoT (`/api/v1/devices`)
+
+| Endpoint | Método HTTP | Acción | Códigos de Respuesta | Descripción |
+| :--- | :---: | :--- | :---: | :--- |
+| `/api/v1/devices` | `POST` | Registrar dispositivo | `201`, `400`, `409` | Registra un wearable IoT en estado `PENDING` mediante su `pairingCode`. |
+| `/api/v1/devices/pair` | `POST` | Vincular dispositivo | `200`, `404`, `409` | Asocia un dispositivo registrado a un `elderlyProfileId` (`PAIRED`). |
+| `/api/v1/devices/{deviceId}` | `GET` | Consultar dispositivo | `200`, `404` | Obtiene estado de conexión, último latido y porcentaje de batería. |
+| `/api/v1/devices?elderlyProfileId={id}` | `GET` | Listar por adulto mayor | `200` | Lista los dispositivos vinculados a un perfil de adulto mayor. |
+| `/api/v1/devices/{deviceId}/telemetry` | `POST` | Registrar telemetría | `201`, `400`, `404`, `409` | Recibe lecturas (`LOCATION`, `HEARTBEAT`, `PANIC`, `FALL`) y publica `TelemetryReceivedEvent`. |
+| `/api/v1/devices/{deviceId}/telemetry?from={iso}&to={iso}` | `GET` | Historial de telemetría | `200`, `400`, `404` | Consulta eventos de telemetría en un rango de fechas ISO-8601. |
+
+### Bounded Context: Zones (`/api/v1/safe-zones`)
+
+| Endpoint | Método HTTP | Acción | Códigos de Respuesta | Descripción |
+| :--- | :---: | :--- | :---: | :--- |
+| `/api/v1/safe-zones` | `POST` | Crear zona segura | `201`, `400`, `409` | Define una geocerca circular (`elderlyProfileId`, `name`, `latitude`, `longitude`, `radiusMeters`). |
+| `/api/v1/safe-zones/{safeZoneId}` | `PUT` | Editar zona segura | `200`, `400`, `404`, `409` | Actualiza el nombre, coordenadas centrales o radio de una geocerca existente. |
+| `/api/v1/safe-zones/{safeZoneId}` | `GET` | Consultar zona segura | `200`, `404` | Devuelve el detalle de la geocerca y el estado de presencia actual (`INSIDE`/`OUTSIDE`). |
+| `/api/v1/safe-zones?elderlyProfileId={id}` | `GET` | Listar zonas por perfil | `200` | Obtiene todas las zonas seguras configuradas para un adulto mayor. |
+
+### Bounded Context: Monitor (`/api/v1/alerts` y `/api/v1/monitor/tracking`)
+
+| Endpoint | Método HTTP | Acción | Códigos de Respuesta | Descripción |
+| :--- | :---: | :--- | :---: | :--- |
+| `/api/v1/alerts` | `GET` | Consultar alertas | `200` | Lista alertas de riesgo generadas manual o automáticamente (`ZONE_EXIT`, `SOS`, `FALL_DETECTED`, `LOW_BATTERY`, `INACTIVITY`). |
+| `/api/v1/alerts` | `POST` | Crear alerta | `201`, `400` | Registra una nueva alerta de riesgo para un adulto mayor. |
+| `/api/v1/alerts/{id}` | `GET` | Detalle de alerta | `200`, `404` | Obtiene la información completa de una alerta específica. |
+| `/api/v1/alerts/{id}/attend` | `PATCH` | Atender alerta | `200`, `404` | Marca la alerta como atendida registrando al cuidador responsable. |
+| `/api/v1/alerts/{id}/resolve` | `PATCH` | Resolver alerta | `200`, `404` | Cierra la incidencia marcándola en estado `RESOLVED`. |
+| `/api/v1/monitor/tracking/locations` | `POST` / `GET` | Tracking de ubicaciones | `200`, `201` | Registra y consulta historial y última ubicación conocida del adulto mayor. |
+
+### Bounded Context: Subscriptions (`/api/v1/subscriptions`)
+
+| Endpoint | Método HTTP | Acción | Códigos de Respuesta | Descripción |
+| :--- | :---: | :--- | :---: | :--- |
+| `/api/v1/subscriptions/plans` | `GET` | Listar planes | `200` | Devuelve los planes disponibles (`FREE`, `FAMILIAR_PLUS`, `FAMILIAR_PREMIUM`) en moneda `PEN`. |
+| `/api/v1/subscriptions` | `POST` | Crear suscripción | `201`, `409` | Activa una suscripción para un `userId` con método de pago tokenizado. |
+| `/api/v1/subscriptions?userId={id}` | `GET` | Consultar por usuario | `200`, `404` | Obtiene la suscripción activa de un cuidador administrador. |
+| `/api/v1/subscriptions/{id}/plan` | `PATCH` | Cambiar plan | `200`, `404`, `422` | Actualiza el nivel de plan contratado. |
+| `/api/v1/subscriptions/{id}/payment-method` | `PATCH` | Actualizar tarjeta | `200`, `404` | Reemplaza el token y metadatos de tarjeta (`brand`, `lastFour`, expiración). |
+| `/api/v1/subscriptions/{id}/cancel` | `POST` | Cancelar suscripción | `200`, `404`, `409` | Programa la cancelación al finalizar el periodo de facturación vigente. |
+
+
+#### <a name="sprint_3_deployment_evidence"></a>5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3 se realizó el aprovisionamiento y despliegue de la **base de datos relacional PostgreSQL en la nube mediante Render**, permitiendo que las entidades de los cuatro Bounded Contexts persistieran sus datos fuera del entorno local con conexión cifrada (`SSL Mode: Require`).
+
+| Componente / Servicio | Plataforma / Entorno | URL / Endpoint de Referencia | Estado |
+| :--- | :--- | :--- | :--- |
+| Base de Datos Relacional (`famicare_db` — PostgreSQL 18) | **Render Cloud (Oregon, US West)** | `jdbc:postgresql://dpg-dbrkdq8ae00c73frg09g-a.oregon-postgres.render.com:5432/famicare_db?sslmode=require` | Desplegado y operativo |
+| Landing Page Pública | **GitHub Pages** | `https://upc-pre-202620-1asi0729-7729-serenia.github.io/Famicare-Landing-Page/` | Desplegado y operativo |
+| Web Services RESTful (`Famicare-Backend`) | Entorno local conectado a DB Cloud | `http://localhost:8080/swagger-ui/index.html` | Operativo (4 de 5 contextos) |
+| Web Application (`Famicare-Frontend`) | Entorno local conectado a API REST | `http://localhost:4200` | Operativo e integrado |
+
+**Tablas generadas y verificadas en PostgreSQL (Render):**
+* `iot_devices` y `telemetry_events` (Contexto `iot`)
+* `safe_zones` y `last_known_locations` (Contexto `zones`)
+* `monitors`, `location_records` y `monitor_telemetry_events` (Contexto `monitor`)
+* `subscriptions` (Contexto `subscription`)
+
+
+#### <a name="sprint_3_collab_insights"></a>5.2.3.8. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 3, el equipo distribuyó el desarrollo del backend bajo una arquitectura modular por Bounded Contexts, asegurando que cada integrante liderara un dominio específico de principio a fin (modelo de dominio, persistencia JPA, servicios de aplicación, controladores REST e integración con Angular).
+
+### Actividades realizadas por los integrantes
+
+| Alumno | Bounded Context Asignado | Actividad Realizada |
+| :--- | :--- | :--- |
+| Arroyo Gonzales, Emily Juliette | **Subscriptions** | Implementación completa del dominio de suscripciones, planes (`FREE`, `FAMILIAR_PLUS`, `FAMILIAR_PREMIUM`), métodos de pago tokenizados, servicio programado de expiración e integración con `AccountViewComponent` y `SubscriptionModalComponent`. |
+| Atoche Gonzales, Nicolas Fernando | **IoT** | Implementación del ciclo de vida de dispositivos (`Device`), códigos de emparejamiento, ingesta de telemetría (`TelemetryEvent`), ajustes de compatibilidad DDL en PostgreSQL e integración de `DevicesService` en el frontend. |
+| Estupiñan Olortegui, Juan Sebastián | **Monitor** | Implementación del contexto `monitor` (`AlertsController`, `TrackingController`, flujo de atención y resolución de alertas), configuración de la base de datos PostgreSQL en Render e integración de `AlertsStore` y `MonitoringStore` con `HttpClient`. |
+| Yauri Barrios, Antony David | **Zones** | Implementación de geocercas circulares (`SafeZone`), cálculo espacial de presencia, escucha reactiva de telemetría (`TelemetryReceivedEventHandler`) y emisión de eventos de entrada/salida de zona segura. |
+
+### Colaboración mediante Git
+
+El desarrollo se gestionó en dos repositorios independientes (`Famicare-Backend` y `Famicare-Frontend`) siguiendo **GitFlow** y la convención **Conventional Commits** (`feat`, `fix`, `chore`, `refactor`), manteniendo commits atómicos por bounded context y capa funcional para facilitar la revisión de código y la trazabilidad de cambios.
+
+### Identificación de integrantes
+
+| Username (GitHub) | Nombre |
+| :--- | :--- |
+| `Em2920` | Arroyo Gonzales, Emily Juliette |
+| `THECOMAX` | Atoche Gonzales, Nicolas Fernando |
+| `JuanSEstupinan` | Estupiñan Olortegui, Juan Sebastián |
+| `PieroR29` | Razuri Ucañan, Piero Alejandro |
+| `KazeKesh` | Yauri Barrios, Antony David |
